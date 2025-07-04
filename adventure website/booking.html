@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-banner">
+         FEELING SPONTANEOUS?! SAVE ON <a href="#">TRIPS DEPARTING SOON</a>
+    </header>
+    <nav class="navbar">
+   <a href="index.html"> <div class="logo">Adventurage</div></a>
+    <ul class="nav-links">
+      <li><a href="filter1.html" class="active">Tour</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+      <a href="adlogin.html"><span class="profile-icon"><img src="user icon.png"></span></a>
+  </nav>
+
+   <div class="book-container">
+        <div class="header">
+            <a href="index.html"><div class="book-logo">Adventurage</div></a>
+            <div class="date-section">
+                <div class="calendar-icon"></div>
+                <div class="date-text">SUNDAY 3rd OCT 2025</div>
+            </div>
+            <div class="date-range">To SATURDAY 9th OCT 2025</div>
+        </div>
+
+        <div class="travellers-section">
+            <div class="travellers-title">How many travellers?</div>
+            <div class="counter-container">
+                <button class="counter-btn" id="decrementBtn">−</button>
+                <div class="counter-display" id="adultCount">1 ADULT</div>
+                <button class="counter-btn" id="incrementBtn">+</button>
+            </div>
+            <div class="price" id="totalPrice">₹ 40,000</div>
+        </div>
+
+        <div class="section-title">YOUR DETAILS</div>
+        
+        <div class="info-box">
+            <div class="info-title">IMPORTANT</div>
+            <div class="info-text">
+                If you're booking for someone else, enter your own details<br> here. You'll add their passenger information later
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label class="form-label">PHONE NUMBER</label>
+                <input type="tel" class="form-input" id="phoneNumber" placeholder="+91 00000 00000">
+            </div>
+            <div class="form-group">
+                <label class="form-label">COUNTRY</label>
+                <div class="form-input country-input">
+                    <div class="flag"></div>
+                    <span>INDIA</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <input type="checkbox" class="checkbox" id="terms">
+                <label class="checkbox-label" for="terms">I agree to the booking terms & conditions</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" class="checkbox" id="updates">
+                <label class="checkbox-label" for="updates">I'd like to receive updates on new trips, exclusive invites, practical advice, and inspirational stories</label>
+            </div>
+        </div>
+
+       <a href="card.html"><button class="continue-btn">CONTINUE TO PAYMENT</button></a> 
+    </div>
+
+    <section class="features-icons">
+  <div class="icon-item">
+    <img src="bottom icon 1.png"/>
+    <p>Explore place you<br>couldn’t yourself</p>
+  </div>
+  <div class="icon-item">
+    <img src="bottom icon 2.png"/>
+    <p>Go with the outdoor<br>specialists</p>
+  </div>
+  <div class="icon-item">
+    <img src="bottom icon 3.png"/>
+    <p>Join a small like-<br>minded group</p>
+  </div>
+  <div class="icon-item">
+    <img src="bottom icon.png"/>
+    <p>Hassle-free from<br>start to finish</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+     <a href="index.html"> <h3>Adventurage<br><span style=" font-family: 'DM Sans', sans-serif; font-size:1.5rem;color:#fff;">=BOOK WITH CONFIDENCE=</span></h3></a>
+     
+    </div>
+    <div class="footer-links">
+      <h4>ABOUT</h4>
+      <ul>
+       <a href="about2.html" ><li>Our Story</li></a>
+        <a href="about1.html" > <li>Our Impact</li></a>
+        <a href="team.html" ><li>Meet the Team</li></a>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>CUSTOMERS</h4>
+      <ul>
+       <a href="contact.html"> <li>Contact Us</li></a>
+       <a href="about.html" > <li>Terms & Conditions</li></a>
+         <a href="about.html"> <li>Privacy Policy</li></a>
+         <a href="about.html" > <li>Agency Booking</li></a>
+      </ul>
+    </div>
+  
+  </div>
+    <p class="footer-copy">&copy; Copyright Adventurage Ltd. Registration Number 012458697</p>
+</footer>
+
+    <script >
+      // Booking 
+// Counter functionality
+        let adultCount = 1;
+        const pricePerAdult = 40000;
+        
+        const decrementBtn = document.getElementById('decrementBtn');
+        const incrementBtn = document.getElementById('incrementBtn');
+        const adultCountDisplay = document.getElementById('adultCount');
+        const totalPriceDisplay = document.getElementById('totalPrice');
+
+        function updateDisplay() {
+            // Update adult count display
+            if (adultCount === 1) {
+                adultCountDisplay.textContent = '1 ADULT';
+            } else {
+                adultCountDisplay.textContent = `${adultCount} ADULTS`;
+            }
+              // Update total price
+            const totalPrice = adultCount * pricePerAdult;
+            totalPriceDisplay.textContent = `₹ ${totalPrice.toLocaleString('en-IN')}`;
+            
+            // Update button states
+            decrementBtn.disabled = adultCount <= 1;
+        }
+
+        // Increment button click
+        incrementBtn.addEventListener('click', () => {
+            if (adultCount < 10) { // Maximum limit of 10 adults
+                adultCount++;
+                updateDisplay();
+            }
+        });
+
+        // Decrement button click
+        decrementBtn.addEventListener('click', () => {
+            if (adultCount > 1) {
+                adultCount--;
+                updateDisplay();
+            }
+        });
+
+        // Initialize display
+        updateDisplay();
+      //phone number autofill
+ const predefinedPhone = "+91 90000 90000";
+
+        // Get the phone input element
+        const phoneInput = document.getElementById('phoneNumber');
+
+        // Add double-click event listener
+        phoneInput.addEventListener('dblclick', function() {
+            this.value = predefinedPhone;
+            
+            // Optional: Add visual feedback
+            this.style.borderColor = '#4a90a4';
+            this.style.backgroundColor = '#e8f5e8';
+            
+            // Reset styles after 2 seconds
+            setTimeout(() => {
+                this.style.borderColor = '#ddd';
+                this.style.backgroundColor = '#f8f9fa';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-banner">
+         FEELING SPONTANEOUS?! SAVE ON <a href="#">TRIPS DEPARTING SOON</a>
+    </header>
+    <nav class="navbar">
+   <a href="index.html"> <div class="logo">Adventurage</div></a>
+    <ul class="nav-links">
+      <li><a href="filter1.html" class="active">Tour</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+      <a href="adlogin.html"><span class="profile-icon"><img src="user icon.png"></span></a>
+  </nav>
+
+
+  <section class="login-section">
+  <div class="login-container">
+    <a href="index.html"><h1 class="brand">Adventurage</h1></a>
+    <h2 class="login-title">LOGIN</h2>
+
+    <form class="login-form">
+      <label for="email">MAIL ID</label>
+      <input type="email" id="email" placeholder="" required>
+
+      <label for="password">PASSWORD</label>
+      <input type="password" id="password" placeholder="" required>
+
+      <button type="button" class="submit-btn" id="continueBtn">CONTINUE</button>
+    </form>
+  </div>
+  </section>
+
+  <footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+     <a href="index.html"><h3>Adventurage<br><span style=" font-family: 'DM Sans', sans-serif; font-size:1.5rem;color:#fff;">=BOOK WITH CONFIDENCE=</span></h3></a>
+     
+    </div>
+    <div class="footer-links">
+      <h4>ABOUT</h4>
+      <ul>
+       <a href="about2.html" ><li>Our Story</li></a>
+        <a href="about1.html" > <li>Our Impact</li></a>
+        <a href="team.html" ><li>Meet the Team</li></a>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>CUSTOMERS</h4>
+      <ul>
+       <a href="contact.html"> <li>Contact Us</li></a>
+       <a href="about.html" > <li>Terms & Conditions</li></a>
+         <a href="about.html"> <li>Privacy Policy</li></a>
+         <a href="about.html" > <li>Agency Booking</li></a>
+      </ul>
+    </div>
+  
+  </div>
+    <p class="footer-copy">&copy; Copyright Adventurage Ltd. Registration Number 012458697</p>
+</footer>
+
+    <script>
+    // Predefined login data
+        const predefinedData = {
+            email: "selanseraphina@gmail.com",
+            password: "************"
+        };
+
+        // Get input elements
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const continueBtn = document.getElementById('continueBtn');
+
+        // Add double-click event listener to email input
+        emailInput.addEventListener('dblclick', function() {
+            this.value = predefinedData.email;
+            this.classList.add('filled-input');
+        });
+
+        // Add double-click event listener to password input
+        passwordInput.addEventListener('dblclick', function() {
+            this.value = predefinedData.password;
+            this.classList.add('filled-input');
+        });
+
+        // Handle continue button click
+        continueBtn.addEventListener('click', function() {
+            const email = emailInput.value;
+            const password = passwordInput.value;
+            
+            if (email && password) {
+                // Redirect to index.html
+                window.location.href = 'index.html';
+            } else {
+                alert('Please fill in both email and password');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,7634 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #1e2d36;
+  background-color: #ffffff;
+}
+
+.top-banner {
+  background-color: #16404D;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.top-banner a {
+  color: #fff;
+  font-weight: bold;
+
+}
+
+.navbar {
+
+  max-width: 1000px;
+  width: 100%;
+  z-index: 100;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d6f2ff;
+  margin-left: 300px;
+  border-radius: 30px;
+  margin-top: 30px;
+
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 3rem;
+  font-family: 'Dokdo', cursive;
+  color:#131313;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1e2d36;
+  border-bottom: 2px solid transparent;
+  font-family: 'Dokdo', cursive;
+  font-size: 2rem;
+}
+
+.nav-links li a:hover {
+  border-bottom: 2px solid #1e2d36;
+
+
+}
+
+.profile-icon {
+  background: #d6f2ff;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 40px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #16404D;
+}
+
+.hero-left p {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  max-width: 500px;
+}
+
+.discover-btn {
+  display: inline-block;
+  background-color: #1e2d36;
+  color: white;
+  padding: 10px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.water-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  max-height: 600px;
+  object-fit: cover;
+  margin-left: 90px;
+  position: relative;
+}
+
+.booking-panel {
+  background-color: #e6f8ff;
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5rem 3.5rem;
+  border-radius: 20px;
+  margin: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: absolute;
+  top: 95%;
+  left: 15%;
+}
+
+.booking-item {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.booking-item span {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.booking-item p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1e2d36;
+}
+
+.search-icon {
+  color: #fff;
+  font-size: 1rem;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #16404D;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 1440px) {
+
+  /* For Nest Hub Max (1280x800) and similar */
+  .navbar {
+    margin-left: 30px;
+    padding: 15px 30px;
+  }
+
+  .booking-panel {
+    left: 10%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+
+  /* For laptops and tablets in landscape */
+  .navbar {
+    margin-left: 150px;
+    max-width: 800px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .water-image img {
+    margin-left: 50px;
+  }
+
+  .booking-panel {
+    left: 5%;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  /* For iPad Pro and similar tablets */
+  .navbar {
+    margin-left: 100px;
+    padding: 12px 25px;
+    border-radius: 25px;
+  }
+
+  .logo,
+  .nav-links li a {
+    font-size: 1.8rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .water-image img {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+
+  .booking-panel {
+    position: static;
+    margin: 2rem auto;
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For iPad and similar tablets */
+  .navbar {
+    margin-left: 50px;
+    max-width: 90%;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* For mobile phones and small tablets */
+  .navbar {
+    margin: 20px auto;
+    padding: 10px 15px;
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .nav-links li a {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .booking-panel {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .booking-item {
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .search-icon {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  /* For iPhone and similar small devices */
+  .top-banner {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .navbar {
+    margin: 15px auto;
+    border-radius: 15px;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .discover-btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  /* For iPhone SE and similar very small devices */
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .booking-panel {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  /* For Galaxy Fold and similar */
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/*Tab-section*/
+.tabs {
+  display: flex;
+  gap: 30px;
+  margin: 50px 80px;
+  max-width: 1500px;
+
+
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  color: #111;
+}
+
+.tab-button.active {
+  color: #16404D;
+  font-weight: 700;
+  border-bottom: 3px solid #2b4c5b;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 60px;
+}
+
+.hidden {
+  display: none;
+}
+
+.tab-card {
+  width: 200px;
+  height: 280px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #fff;
+
+
+}
+
+.tab-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.tab-card img:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Large Tablets & Small Laptops (768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .tabs {
+    margin: 40px 50px;
+    gap: 25px;
+  }
+  
+  .tab-button {
+    font-size: 1.3rem;
+    padding-bottom: 8px;
+  }
+  
+  .tab-content {
+    margin-left: 40px;
+    gap: 15px;
+  }
+  
+  .tab-card {
+    width: 180px;
+    height: 260px;
+  }
+  
+  .tab-card img {
+    height: 230px;
+  }
+}
+
+/* iPad Portrait & Similar Tablets (768px) */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .tabs {
+    margin: 30px 20px;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .tab-button {
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .tab-content {
+    margin-left: 20px;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .tab-card {
+    width: 200px;
+    height: 280px;
+  }
+  
+  .tab-card img {
+    height: 250px;
+  }
+}
+
+/* Mobile Landscape & Small Tablets (481px - 767px) */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .tabs {
+    margin: 25px 15px;
+    gap: 15px;
+  }
+  
+  .tab-button {
+    font-size: 1.1rem;
+  }
+  
+  .tab-content {
+    margin-left: 15px;
+    gap: 12px;
+  }
+  
+  .tab-card {
+    width: 160px;
+    height: 240px;
+  }
+  
+  .tab-card img {
+    height: 210px;
+  }
+}
+
+/* iPhone 14 Pro Max, iPhone 13 Pro Max, iPhone 12 Pro Max */
+@media screen and (max-width: 428px) and (min-width: 415px) {
+  .tabs {
+    margin: 20px 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tab-button {
+    font-size: 1rem;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+  }
+  
+  .tab-content {
+    margin-left: 10px;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .tab-card {
+    width: 180px;
+    height: 250px;
+  }
+  
+  .tab-card img {
+    height: 220px;
+  }
+}
+
+/* iPhone 14, iPhone 13, iPhone 12, iPhone 11 */
+@media screen and (max-width: 414px) and (min-width: 376px) {
+  .tabs {
+    margin: 15px 8px;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tab-button {
+    font-size: 0.95rem;
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+  }
+  
+  .tab-content {
+    margin-left: 8px;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .tab-card {
+    width: 170px;
+    height: 240px;
+  }
+  
+  .tab-card img {
+    height: 210px;
+  }
+}
+
+/* iPhone SE, iPhone 8, iPhone 7, iPhone 6s */
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .tabs {
+    margin: 15px 5px;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tab-button {
+    font-size: 0.9rem;
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .tab-content {
+    margin-left: 5px;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .tab-card {
+    width: 160px;
+    height: 230px;
+  }
+  
+  .tab-card img {
+    height: 200px;
+  }
+}
+
+/* iPhone 5s, iPhone 5c, iPhone 5 */
+@media screen and (max-width: 320px) {
+  .tabs {
+    margin: 10px 5px;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tab-button {
+    font-size: 0.8rem;
+    padding-bottom: 3px;
+    margin-bottom: 4px;
+  }
+  
+  .tab-content {
+    margin-left: 5px;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .tab-card {
+    width: 140px;
+    height: 210px;
+  }
+  
+  .tab-card img {
+    height: 180px;
+  }
+}
+
+/* Samsung Galaxy S21+, S20+, Note series */
+@media screen and (max-width: 412px) and (min-width: 360px) {
+  .tabs {
+    margin: 15px 8px;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tab-button {
+    font-size: 0.95rem;
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+  }
+  
+  .tab-content {
+    margin-left: 8px;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .tab-card {
+    width: 165px;
+    height: 235px;
+  }
+  
+  .tab-card img {
+    height: 205px;
+  }
+}
+
+/* Samsung Galaxy A series & Mid-range phones */
+@media screen and (max-width: 360px) and (min-width: 321px) {
+  .tabs {
+    margin: 12px 6px;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tab-button {
+    font-size: 0.85rem;
+    padding-bottom: 4px;
+  }
+  
+  .tab-content {
+    margin-left: 6px;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .tab-card {
+    width: 155px;
+    height: 225px;
+  }
+  
+  .tab-card img {
+    height: 195px;
+  }
+}
+
+/* Nest Hub (1024x600) */
+@media screen and (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+  .tabs {
+    margin: 20px 30px;
+    gap: 20px;
+  }
+  
+  .tab-button {
+    font-size: 1.1rem;
+    padding-bottom: 6px;
+  }
+  
+  .tab-content {
+    margin-left: 30px;
+    gap: 12px;
+  }
+  
+  .tab-card {
+    width: 140px;
+    height: 200px;
+  }
+  
+  .tab-card img {
+    height: 170px;
+  }
+}
+
+/* Nest Hub Max (1280x800) */
+@media screen and (max-width: 1280px) and (max-height: 800px) and (orientation: landscape) {
+  .tabs {
+    margin: 30px 40px;
+    gap: 25px;
+  }
+  
+  .tab-button {
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+  }
+  
+  .tab-content {
+    margin-left: 40px;
+    gap: 15px;
+  }
+  
+  .tab-card {
+    width: 160px;
+    height: 230px;
+  }
+  
+  .tab-card img {
+    height: 200px;
+  }
+}
+
+/* Landscape Orientation for Mobile Devices */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .tabs {
+    margin: 10px 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tab-button {
+    font-size: 0.9rem;
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+  }
+  
+  .tab-content {
+    margin-left: 15px;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .tab-card {
+    width: 120px;
+    height: 170px;
+  }
+  
+  .tab-card img {
+    height: 140px;
+  }
+}
+
+/* Mini Laptops & Netbooks (1024px - 1200px) */
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+  .tabs {
+    margin: 45px 60px;
+    gap: 28px;
+  }
+  
+  .tab-button {
+    font-size: 1.4rem;
+    padding-bottom: 9px;
+  }
+  
+  .tab-content {
+    margin-left: 50px;
+    gap: 18px;
+  }
+  
+  .tab-card {
+    width: 190px;
+    height: 270px;
+  }
+  
+  .tab-card img {
+    height: 240px;
+  }
+}
+
+/* Very Small Screens (280px and below) */
+@media screen and (max-width: 280px) {
+  .tabs {
+    margin: 8px 3px;
+    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tab-button {
+    font-size: 0.7rem;
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+  }
+  
+  .tab-content {
+    margin-left: 3px;
+    justify-content: center;
+    gap: 4px;
+  }
+  
+  .tab-card {
+    width: 120px;
+    height: 180px;
+  }
+  
+  .tab-card img {
+    height: 150px;
+  }
+}
+
+/* Tablet Portrait Mode Specific */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+    gap: 15px;
+  }
+  
+  .tab-button {
+    margin-bottom: 8px;
+  }
+  
+  .tab-content {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+/* Tablet Landscape Mode Specific */
+@media screen and (max-width: 1024px) and (orientation: landscape) and (min-width: 768px) {
+  .tabs {
+    margin: 15px 25px;
+    gap: 15px;
+  }
+  
+  .tab-content {
+    margin-left: 25px;
+    gap: 10px;
+  }
+  
+  .tab-card {
+    width: 150px;
+    height: 220px;
+  }
+  
+  .tab-card img {
+    height: 190px;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .tab-button {
+    padding: 12px 8px;
+    min-height: 44px;
+  }
+  
+  .tab-card img:hover {
+    transform: none;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .tab-card img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+
+
+/*Tour Packages*/
+
+
+.tour-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+}
+
+.tour-text h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #16404D;
+
+}
+
+.tour-left p {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  max-width: 500px;
+  text-align: right;
+}
+
+.tour-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-left: 100px;
+
+}
+
+.tour-card {
+  background: #f9f9f9;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.tour-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  padding: 20px;
+
+}
+
+.label {
+  position: absolute;
+  margin: 35px;
+  padding: 8px 25px;
+  background: white;
+  font-size: 0.9rem;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.tour-details {
+  padding: 1rem;
+}
+
+.tour-details h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.tour-details p {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.rating {
+  color: #ffa500;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.tour-details ul {
+  margin: 0.5rem 0.6rem;
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+  list-style-type: none;
+}
+.tour-details ul i{
+ color:#138808;
+ font-size:20px;
+ margin:5px;
+}
+
+.view-all {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #eef6f9;
+}
+
+
+.view-all-btn {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  margin-left: 50px;
+  color:#000;
+}
+
+.view-all-btn img {
+  width: 100px;
+  height: 100px;
+
+
+}
+
+
+
+.fitness-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+
+.fitness-text h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #16404D;
+
+
+}
+
+.fitness-left p {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-align: right;
+  margin-top: 50px;
+  margin-right: 60px;
+  ;
+}
+
+
+.levels {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.level-card {
+  position: relative;
+  width: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.level-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.level-label {
+  position: absolute;
+  display: none;
+  bottom: 10px;
+  left: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+/* Responsive Tweaks Only for Smaller Screens */
+
+/* For devices smaller than 1200px */
+@media (max-width: 1199px) {
+
+  .tour-text,
+  .fitness-text {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .tour-left p,
+  .fitness-left p {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .tour-cards,
+  .levels {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .tour-details img {
+    width: 60px;
+    height: 40px;
+
+  }
+
+  .view-all-btn img {
+    width: 150px;
+    height: 100px;
+
+
+  }
+
+}
+
+/* For tablets and small laptops (below 992px) */
+@media (max-width: 991px) {
+
+  .tour-card,
+  .level-card {
+    width: 45%;
+  }
+
+  .tour-left p,
+  .fitness-left p {
+    font-size: 1.3rem;
+  }
+}
+
+/* For mobile devices and Nest Hub (below 768px) */
+@media (max-width: 767px) {
+
+  .tour-card,
+  .level-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .tour-card img,
+  .level-card img {
+    height: 220px;
+  }
+
+  .tour-left p,
+  .fitness-left p {
+    font-size: 1.2rem;
+  }
+
+  .view-all {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .view-all-btn {
+    margin-left: 0;
+    font-size: 1.4rem;
+  }
+
+  .view-all-btn img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* For extra small screens like iPhone SE, Samsung A series, etc. */
+@media (max-width: 575px) {
+
+  .tour-card,
+  .level-card {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .tour-left p,
+  .fitness-left p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+
+  .label,
+  .level-label {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+
+  .view-all-btn img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+/* TOUR GUIDES */
+.tour-guides {
+  padding: 2rem;
+}
+
+.tour-guides h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #16404D;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.guide-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.guide-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  width: 280px;
+  height: 320px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: 60px;
+}
+
+.guide-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.special-card {
+  background-color: #16404D;
+  color: #fff;
+  height: 30vh;
+  width: 230px;
+  border-radius: 30px;
+}
+
+.special-card h4 {
+  margin-top: 50px;
+  font-size: 1.5rem;
+  ;
+  color: #fff;
+}
+
+.special-card img {
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+
+}
+
+.view {
+  width: 200px;
+  height: 180px;
+  margin-top: 50px;
+}
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Large Tablets & Small Laptops (768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .tour-guides h2 {
+    margin-left: 40px;
+    font-size: 2.2rem;
+  }
+  
+  .guide-card {
+    width: 250px;
+    height: 300px;
+    margin-left: 40px;
+  }
+  
+  .guide-card img {
+    height: 200px;
+  }
+  
+  .special-card {
+    width: 200px;
+    height: 280px;
+  }
+  
+  .view {
+    visibility: hidden;
+  }
+}
+
+/* iPad Portrait & Similar Tablets (768px) */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .tour-guides {
+    padding: 1.5rem;
+  }
+  
+  .tour-guides h2 {
+    margin-left: 20px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .guide-cards {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .guide-card {
+    width: 300px;
+    height: 350px;
+    margin-left: 0;
+  }
+  
+  .guide-card img {
+    height: 250px;
+  }
+  
+  .special-card {
+    width: 250px;
+    height: 320px;
+  }
+  
+  .special-card h4 {
+    margin-top: 60px;
+    font-size: 1.4rem;
+  }
+  
+  .view {
+    visibility: hidden;
+  }
+}
+
+/* Mobile Landscape & Small Tablets (481px - 767px) */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .guide-cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .guide-card {
+    width: 220px;
+    height: 280px;
+  }
+  
+  .guide-card img {
+    height: 180px;
+  }
+  
+  .special-card {
+    width: 180px;
+    height: 250px;
+  }
+  
+  .view {
+    visibility: hidden;
+  }
+}
+
+/* iPhone 14 Pro Max, iPhone 13 Pro Max, iPhone 12 Pro Max */
+@media screen and (max-width: 428px) and (min-width: 415px) {
+  .tour-guides {
+    padding: 1rem;
+  }
+  
+  .tour-guides h2 {
+    margin-left: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .guide-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .guide-card {
+    width: 350px;
+    height: 300px;
+    margin-left: 0;
+  }
+  
+  .guide-card img {
+    height: 200px;
+  }
+  
+  .special-card {
+    width: 300px;
+    height: 250px;
+  }
+  
+  .special-card h4 {
+    margin-top: 40px;
+    font-size: 1.3rem;
+  }
+  
+  .view {
+    visibility: hidden;
+  }
+}
+
+/* iPhone 14, iPhone 13, iPhone 12, iPhone 11 */
+@media screen and (max-width: 414px) and (min-width: 376px) {
+  .tour-guides {
+    padding: 1rem;
+  }
+  
+  .tour-guides h2 {
+    margin-left: 10px;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  
+  .guide-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .guide-card {
+    width: 320px;
+    height: 280px;
+    margin-left: 0;
+  }
+  
+  .guide-card img {
+    height: 180px;
+  }
+  
+  .special-card {
+    width: 280px;
+    height: 230px;
+  }
+  
+  .special-card h4 {
+    margin-top: 35px;
+    font-size: 1.2rem;
+  }
+  
+  .view {
+    visibility: hidden;
+  }
+}
+
+/* iPhone SE, iPhone 8, iPhone 7, iPhone 6s */
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .tour-guides {
+    padding: 0.8rem;
+  }
+  
+  .tour-guides h2 {
+    margin-left: 5px;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  .guide-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .guide-card {
+    width: 300px;
+    height: 260px;
+    margin-left: 0;
+  }
+  
+  .guide-card img {
+    height: 160px;
+  }
+  
+  .special-card {
+    width: 260px;
+    height: 210px;
+  }
+  
+  .special-card h4 {
+    margin-top: 30px;
+    font-size: 1.1rem;
+  }
+  
+  .view {
+   visibility: hidden;
+  }
+}
+
+/* iPhone 5s, iPhone 5c, iPhone 5 */
+@media screen and (max-width: 320px) {
+  .tour-guides {
+    padding: 0.5rem;
+  }
+  
+  .tour-guides h2 {
+    margin-left: 0;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  .guide-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .guide-card {
+    width: 280px;
+    height: 240px;
+    margin-left: 0;
+  }
+  
+  .guide-card img {
+    height: 140px;
+  }
+  
+  .special-card {
+    width: 240px;
+    height: 190px;
+  }
+  
+  .special-card h4 {
+    margin-top: 25px;
+    font-size: 1rem;
+  }
+  
+  .view {
+   visibility: hidden;
+  }
+}
+
+/* Samsung Galaxy S21+, S20+, Note series */
+@media screen and (max-width: 412px) and (min-width: 360px) {
+  .tour-guides {
+    padding: 1rem;
+  }
+  
+  .tour-guides h2 {
+    margin-left: 10px;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  
+  .guide-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .guide-card {
+    width: 320px;
+    height: 280px;
+    margin-left: 0;
+  }
+  
+  .guide-card img {
+    height: 180px;
+  }
+  
+  .special-card {
+    width: 280px;
+    height: 230px;
+  }
+}
+
+/* Nest Hub (1024x600) */
+@media screen and (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+  .tour-guides {
+    padding: 1rem;
+  }
+  
+  .tour-guides h2 {
+    margin-left: 30px;
+    font-size: 2rem;
+  }
+  
+  .guide-cards {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+  
+  .guide-card {
+    width: 200px;
+    height: 250px;
+    margin-left: 0;
+  }
+  
+  .guide-card img {
+    height: 150px;
+  }
+  
+  .special-card {
+    width: 180px;
+    height: 220px;
+  }
+  
+  .special-card h4 {
+    margin-top: 30px;
+    font-size: 1.2rem;
+  }
+  
+  .view {
+   visibility: hidden;
+  }
+}
+
+/* Nest Hub Max (1280x800) */
+@media screen and (max-width: 1280px) and (max-height: 800px) and (orientation: landscape) {
+  .tour-guides h2 {
+    margin-left: 40px;
+    font-size: 2.2rem;
+  }
+  
+  .guide-cards {
+    justify-content: space-around;
+  }
+  
+  .guide-card {
+    width: 240px;
+    height: 280px;
+    margin-left: 0;
+  }
+  
+  .guide-card img {
+    height: 180px;
+  }
+  
+  .special-card {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+/* Landscape Orientation for Mobile Devices */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .tour-guides {
+    padding: 0.5rem;
+  }
+  
+  .tour-guides h2 {
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .guide-cards {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+  
+  .guide-card {
+    width: 180px;
+    height: 220px;
+    margin-left: 0;
+  }
+  
+  .guide-card img {
+    height: 130px;
+  }
+  
+  .special-card {
+    width: 160px;
+    height: 190px;
+  }
+  
+  .special-card h4 {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .view {
+     visibility: hidden;
+  }
+}
+
+/* Mini Laptops & Netbooks (1024px - 1200px) */
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+  .tour-guides h2 {
+    margin-left: 50px;
+    font-size: 2.3rem;
+  }
+  
+  .guide-card {
+    width: 260px;
+    height: 310px;
+    margin-left: 50px;
+  }
+  
+  .guide-card img {
+    height: 210px;
+  }
+  
+  .special-card {
+    width: 220px;
+    height: 290px;
+  }
+  
+  .view {
+    visibility: hidden;
+  }
+}
+
+/* Extra responsive adjustments for very small screens */
+@media screen and (max-width: 280px) {
+  .guide-card {
+    width: 250px;
+    height: 220px;
+  }
+  
+  .guide-card img {
+    height: 120px;
+  }
+  
+  .special-card {
+    width: 220px;
+    height: 170px;
+  }
+  
+  .special-card h4 {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .view {
+  visibility: hidden;
+  }
+}
+
+
+
+/*Filter 1*/
+.fcontainer {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 350px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.active-filters {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-header {
+  background-color: #bfe5f2;
+  padding: 15px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.filter-header:hover {
+  background-color: #d4edda;
+}
+
+.filter-title {
+  display: flex;
+  align-items: center;
+}
+
+.filter-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.checkboxes {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 0 0 8px 8px;
+  display: none;
+}
+
+.checkboxes label {
+  display: block;
+  padding: 12px 20px;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.checkboxes label:last-child {
+  border-bottom: none;
+}
+
+.checkboxes label:hover {
+  background-color: #f8f9fa;
+}
+
+.checkboxes input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.trip-cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 60px 30px;
+
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+  width: 400px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.card-tag {
+  position: absolute;
+
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.card-tag img {
+  width: 150px;
+  height: 23px;
+}
+.card .info {
+  padding: 15px;
+    color:#131313;
+}
+
+.card .location {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card h4 {
+  font-size: 1.6rem;
+  margin: 5px 0;
+  text-transform: uppercase;
+   color:#131313;
+}
+
+.card .rating {
+  color: #f5a623;
+  font-size: 0.9rem;
+}
+
+.card .meta {
+  font-size: 0.85rem;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  border-top: 2px solid #000;
+}
+
+.price {
+  font-weight: bold;
+  color: #111;
+}
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Large Tablets & Small Laptops (1024px - 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+  .fcontainer {
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .sidebar {
+    width: 320px;
+    padding: 18px;
+  }
+  
+  .search-box {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+  
+  .filter-header {
+    font-size: 1.3rem;
+    padding: 12px 18px;
+  }
+  
+  .checkboxes label {
+    font-size: 1.2rem;
+    padding: 10px 18px;
+  }
+  
+  .trip-cards {
+    margin: 40px 20px;
+    gap: 18px;
+  }
+  
+  .card {
+    width: 350px;
+  }
+  
+  .card img {
+    height: 280px;
+  }
+  
+  .card h4 {
+    font-size: 1.4rem;
+  }
+  
+  .card-tag img {
+    width: 130px;
+    height: 20px;
+    
+  }
+}
+
+/* iPad Pro & Large Tablets (768px - 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .fcontainer {
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .sidebar {
+    width: 280px;
+    padding: 15px;
+  }
+  
+  .search-box {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+  
+  .filter-header {
+    font-size: 1.2rem;
+    padding: 12px 15px;
+  }
+  
+  .filter-icon {
+    font-size: 16px;
+  }
+  
+  .arrow {
+    font-size: 18px;
+  }
+  
+  .checkboxes label {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+  }
+  
+  .trip-cards {
+    grid-template-columns: 1fr;
+    margin: 30px 15px;
+    gap: 15px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  
+  .card img {
+    height: 250px;
+  }
+  
+  .card h4 {
+    font-size: 1.3rem;
+  }
+  
+  .card .info {
+    padding: 12px;
+  }
+  
+  .card-tag img {
+    width: 120px;
+    height: 18px;
+  }
+}
+
+/* iPad Portrait & Small Tablets (600px - 767px) */
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  .fcontainer {
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .search-box {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  
+  .filter-header {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+  }
+  
+  .filter-icon {
+    font-size: 15px;
+    margin-right: 8px;
+  }
+  
+  .arrow {
+    font-size: 16px;
+  }
+  
+  .checkboxes label {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+  
+  .trip-cards {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+    gap: 15px;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  .card img {
+    height: 200px;
+  }
+  
+  .card h4 {
+    font-size: 1.2rem;
+  }
+  
+  .card .info {
+    padding: 10px;
+  }
+  
+  .card .location {
+    font-size: 0.8rem;
+  }
+  
+  .card .rating {
+    font-size: 0.8rem;
+  }
+  
+  .card .meta {
+    font-size: 0.8rem;
+  }
+  
+  .card-tag {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
+  .card-tag img {
+    width: 100px;
+    height: 16px;
+  }
+}
+
+/* Mobile Landscape & Large Phones (480px - 599px) */
+@media screen and (max-width: 599px) and (min-width: 480px) {
+  .fcontainer {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: 12px;
+  }
+  
+  .search-box {
+    font-size: 14px;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+  }
+  
+  .filter-header {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+  
+  .filter-icon {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+  
+  .arrow {
+    font-size: 14px;
+  }
+  
+  .checkboxes label {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+  
+  .trip-cards {
+    grid-template-columns: 1fr;
+    margin: 15px 0;
+    gap: 12px;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  .card img {
+    height: 180px;
+  }
+  
+  .card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .card .info {
+    padding: 8px;
+  }
+  
+  .card .location {
+    font-size: 0.75rem;
+  }
+  
+  .card .rating {
+    font-size: 0.75rem;
+  }
+  
+  .card .meta {
+    font-size: 0.75rem;
+    margin-top: 6px;
+  }
+  
+  .card-tag {
+    font-size: 0.65rem;
+    padding: 3px 6px;
+    margin: 8px;
+  }
+  
+  .card-tag img {
+    width: 80px;
+    height: 14px;
+  }
+}
+
+/* Small Mobile Phones (320px - 479px) */
+@media screen and (max-width: 479px) {
+  .fcontainer {
+    flex-direction: column;
+    padding: 8px;
+    gap: 12px;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .search-box {
+    font-size: 13px;
+    padding: 6px 8px;
+    margin-bottom: 12px;
+  }
+  
+  .active-filters {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .filter-group {
+    margin-bottom: 12px;
+  }
+  
+  .filter-header {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+  
+  .filter-icon {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  
+  .arrow {
+    font-size: 12px;
+  }
+  
+  .checkboxes {
+    border-radius: 0 0 6px 6px;
+  }
+  
+  .checkboxes label {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+  
+  .checkboxes input[type="checkbox"] {
+    margin-right: 6px;
+  }
+  
+  .trip-cards {
+    grid-template-columns: 1fr;
+    margin: 10px 0;
+    gap: 10px;
+  }
+  
+  .card {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card img {
+    height: 160px;
+  }
+  
+  .card h4 {
+    font-size: 1rem;
+    margin: 3px 0;
+  }
+  
+  .card .info {
+    padding: 6px;
+  }
+  
+  .card .location {
+    font-size: 0.7rem;
+  }
+  
+  .card .rating {
+    font-size: 0.7rem;
+  }
+  
+  .card .meta {
+    font-size: 0.7rem;
+    margin-top: 4px;
+    border-top: 1px solid #000;
+  }
+  
+  .card-tag {
+    font-size: 0.6rem;
+    padding: 2px 4px;
+    margin: 6px;
+    border-radius: 4px;
+  }
+  
+  .card-tag img {
+    width: 60px;
+    height: 12px;
+  }
+}
+
+/* iPhone SE and similar small screens (375px and below) */
+@media screen and (max-width: 375px) {
+  .fcontainer {
+    padding: 5px;
+    gap: 8px;
+  }
+  
+  .sidebar {
+    padding: 8px;
+  }
+  
+  .search-box {
+    font-size: 12px;
+    padding: 5px 6px;
+    margin-bottom: 10px;
+  }
+  
+  .filter-header {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+  
+  .filter-icon {
+    font-size: 10px;
+    margin-right: 4px;
+  }
+  
+  .arrow {
+    font-size: 10px;
+  }
+  
+  .checkboxes label {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
+  .trip-cards {
+    margin: 8px 0;
+    gap: 8px;
+  }
+  
+  .card img {
+    height: 140px;
+  }
+  
+  .card h4 {
+    font-size: 0.9rem;
+  }
+  
+  .card .info {
+    padding: 5px;
+  }
+  
+  .card .location {
+    font-size: 0.65rem;
+  }
+  
+  .card .rating {
+    font-size: 0.65rem;
+  }
+  
+  .card .meta {
+    font-size: 0.65rem;
+  }
+  
+  .card-tag img {
+    width: 50px;
+    height: 10px;
+  }
+}
+
+/* Google Nest Hub (1024x600) */
+@media screen and (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+  .fcontainer {
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .sidebar {
+    width: 250px;
+    padding: 10px;
+  }
+  
+  .search-box {
+    font-size: 13px;
+    padding: 6px 8px;
+    margin-bottom: 10px;
+  }
+  
+  .filter-header {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+  
+  .checkboxes label {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+  
+  .trip-cards {
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 5px;
+    gap: 8px;
+  }
+  
+  .card img {
+    height: 150px;
+  }
+  
+  .card h4 {
+    font-size: 0.9rem;
+  }
+  .card-tag img{
+    width:180px;
+    height:20px;
+  }
+  
+  .card .info {
+    padding: 6px;
+  }
+}
+
+/* Google Nest Hub Max (1280x800) */
+@media screen and (min-width: 1200px) and (max-width: 1280px) and (max-height: 800px) {
+  .fcontainer {
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .sidebar {
+    width: 300px;
+  }
+  
+  .filter-header {
+    font-size: 1.2rem;
+  }
+  
+  .checkboxes label {
+    font-size: 1.1rem;
+  }
+  
+  .trip-cards {
+    margin: 30px 20px;
+  }
+  
+  .card {
+    width: 350px;
+  }
+  .card-tag img{
+    width:180px;
+    height:20px;
+  }
+  
+  
+  
+  .card h4 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Landscape mode adjustments for mobile */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .fcontainer {
+    flex-direction: row;
+  }
+  
+  .sidebar {
+    width: 280px;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .trip-cards {
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+  }
+  
+  .card img {
+    height: 120px;
+  }
+}
+
+/* Very small screens (Galaxy Fold, etc.) */
+@media screen and (max-width: 280px) {
+  .fcontainer {
+    padding: 3px;
+    gap: 5px;
+  }
+  
+  .sidebar {
+    padding: 5px;
+  }
+  
+  .search-box {
+    font-size: 11px;
+    padding: 4px 5px;
+  }
+  
+  .filter-header {
+    font-size: 0.7rem;
+    padding: 4px 6px;
+  }
+  
+  .checkboxes label {
+    font-size: 0.6rem;
+    padding: 3px 6px;
+  }
+  
+  .card img {
+    height: 100px;
+  }
+  
+  .card h4 {
+    font-size: 0.8rem;
+  }
+  
+  .card .info {
+    padding: 4px;
+  }
+  
+  .card-tag img {
+    width: 40px;
+    height: 8px;
+  }
+}
+
+/* TRAVEL SECTION */
+.travel-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.travel-left {
+  flex: 1;
+}
+
+.travel-left h2 {
+  font-size: 2.2rem;
+  margin-left: 50px;
+}
+
+.tview {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.travel-section p {
+  font-size: 1.8rem;
+  margin-left: 40px;
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #000;
+  font-weight: 500;
+}
+
+.travel-right {
+  flex: 1;
+}
+
+.travel-right h4 {
+  color: #16404D;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.travel-right h3 {
+  color: #16404D;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.transport-item {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 600;
+}
+
+.transport-item img {
+  width: 50px;
+  height: 50px;
+  background-color: #16404D;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.transport-item p {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 500;
+}
+
+/* FEATURES ICONS */
+.features-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5rem;
+  text-align: center;
+  padding: 3rem;
+  max-width: 1200px;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.icon-item img {
+  width: 110px;
+  margin-bottom: 0.5rem;
+}
+
+.icon-item p {
+  font-size: 1.5rem;
+  color: #16404D;
+  font-weight: 700;
+}
+
+/* Responsive Media Queries – Travel Section & Features Icons */
+
+/* Below 1200px (Small laptops, large tablets) */
+@media (max-width: 1199px) {
+  .travel-section {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .features-icons {
+    gap: 3rem;
+    margin-left: 60px;
+    padding: 2rem;
+  }
+}
+
+/* Below 992px (Tablets portrait, Nest Hub Max) */
+@media (max-width: 991px) {
+  .travel-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .travel-left h2,
+  .travel-section p {
+    margin-left: 0;
+  }
+
+  .tview {
+    margin: 10px auto;
+  }
+
+  .transport-item {
+    font-size: 2rem;
+  }
+
+  .transport-item p {
+    font-size: 1.8rem;
+  }
+
+  .features-icons {
+    justify-content: center;
+    margin-left: 0;
+    gap: 2.5rem;
+  }
+}
+
+/* Below 768px (Mobiles landscape, Nest Hub) */
+@media (max-width: 767px) {
+  .travel-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .travel-section p {
+    font-size: 1.4rem;
+  }
+
+  .transport-item {
+    font-size: 1.8rem;
+  }
+
+  .transport-item p {
+    font-size: 1.5rem;
+  }
+
+  .features-icons {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .icon-item img {
+    width: 90px;
+  }
+
+  .icon-item p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Below 576px (Mobiles portrait, iPhones, Samsung Galaxy A, Nest Mini) */
+@media (max-width: 575px) {
+  .travel-left h2 {
+    font-size: 1.6rem;
+  }
+
+  .travel-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .transport-item {
+    font-size: 1.5rem;
+  }
+
+  .transport-item img {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+
+  .transport-item p {
+    font-size: 1.3rem;
+  }
+
+  .features-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .icon-item img {
+    width: 70px;
+  }
+
+  .icon-item p {
+    font-size: 1rem;
+  }
+}
+
+/*Login Form*/
+.login-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.login-container {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+
+
+
+}
+
+.brand {
+  font-size: 3rem;
+  font-family: 'Dokdo', cursive;
+  color: #16404D;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.login-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.login-form label {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #000;
+  font-size: 1.4rem;
+}
+
+.login-form input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 2px;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  padding: 12px 80px;
+  width:500px;
+  font-size:1.8rem;
+  font-weight: bold;
+  background-color: #16404D;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #1e3740;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Large Tablets & Small Laptops (768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .login-container {
+    width: 85%;
+    max-width: 450px;
+  }
+  
+  .brand {
+    font-size: 2.5rem;
+    margin-bottom: 18px;
+    margin-top: 25px;
+  }
+  
+  .login-title {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+  
+  .login-form label {
+    font-size: 1.3rem;
+    margin-top: 12px;
+  }
+  
+  .login-form input {
+    padding: 11px;
+    font-size: 15px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    max-width: 450px;
+    padding: 11px 60px;
+    font-size: 1.6rem;
+    margin-top: 25px;
+  }
+}
+
+/* iPad Portrait & Similar Tablets (768px) */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .login-section {
+    padding: 20px;
+  }
+  
+  .login-container {
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .brand {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+    margin-top: 20px;
+  }
+  
+  .login-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .login-form label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 50px;
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile Landscape & Small Tablets (481px - 767px) */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .login-section {
+    padding: 15px;
+  }
+  
+  .login-container {
+    width: 92%;
+    max-width: 380px;
+  }
+  
+  .brand {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 18px;
+  }
+  
+  .login-title {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+  }
+  
+  .login-form label {
+    font-size: 1.1rem;
+    margin-top: 9px;
+  }
+  
+  .login-form input {
+    padding: 9px;
+    font-size: 14px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 9px 40px;
+    font-size: 1.3rem;
+    margin-top: 18px;
+  }
+}
+
+/* iPhone 14 Pro Max, iPhone 13 Pro Max, iPhone 12 Pro Max */
+@media screen and (max-width: 428px) and (min-width: 415px) {
+  .login-section {
+    padding: 15px;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    width: 80%;
+    max-width: 380px;
+  }
+  
+  .brand {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  
+  .login-title {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    gap: 12px;
+  }
+  
+  .login-form label {
+    font-size: 1.1rem;
+    margin-top: 8px;
+  }
+  
+  .login-form input {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .submit-btn {
+    width: 72%;
+    padding: 12px 20px;
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+}
+
+/* iPhone 14, iPhone 13, iPhone 12, iPhone 11 */
+@media screen and (max-width: 414px) and (min-width: 376px) {
+  .login-section {
+    padding: 12px;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    width: 80%;
+    max-width: 360px;
+  }
+  
+  .brand {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    margin-top: 15px;
+  }
+  
+  .login-title {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+  }
+  
+  .login-form {
+    gap: 10px;
+  }
+  
+  .login-form label {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+  
+  .login-form input {
+    padding: 11px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .submit-btn {
+    width: 75%;
+    padding: 11px 18px;
+    font-size: 1.2rem;
+    margin-top: 18px;
+  }
+}
+
+/* iPhone SE, iPhone 8, iPhone 7, iPhone 6s */
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  .login-section {
+    padding: 10px;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    width: 85%;
+    max-width: 340px;
+  }
+  
+  .brand {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    margin-top: 12px;
+  }
+  
+  .login-title {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .login-form {
+    gap: 8px;
+  }
+  
+  .login-form label {
+    font-size: 0.95rem;
+    margin-top: 6px;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .submit-btn {
+    width: 80%;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    margin-top: 15px;
+  }
+}
+
+/* iPhone 5s, iPhone 5c, iPhone 5 */
+@media screen and (max-width: 320px) {
+  .login-section {
+    padding: 8px;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    width: 95%;
+    max-width: 300px;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    margin-top: 10px;
+  }
+  
+  .login-title {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  
+  .login-form {
+    gap: 6px;
+  }
+  
+  .login-form label {
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  .login-form input {
+    padding: 9px;
+    font-size: 16px;
+    border-radius: 3px;
+  }
+  
+  .submit-btn {
+    width: 80%;
+    padding: 9px 12px;
+    font-size: 1rem;
+    margin-top: 12px;
+  }
+}
+
+/* Samsung Galaxy S21+, S20+, Note series */
+@media screen and (max-width: 412px) and (min-width: 360px) {
+  .login-section {
+    padding: 12px;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    width: 95%;
+    max-width: 370px;
+  }
+  
+  .brand {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    margin-top: 15px;
+  }
+  
+  .login-title {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+  }
+  
+  .login-form label {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+  
+  .login-form input {
+    padding: 11px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 11px 18px;
+    font-size: 1.2rem;
+    margin-top: 18px;
+  }
+}
+
+/* Samsung Galaxy A series & Mid-range phones */
+@media screen and (max-width: 360px) and (min-width: 321px) {
+  .login-section {
+    padding: 10px;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    width: 95%;
+    max-width: 330px;
+  }
+  
+  .brand {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    margin-top: 12px;
+  }
+  
+  .login-title {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+  }
+  
+  .login-form label {
+    font-size: 0.95rem;
+    margin-top: 6px;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1.05rem;
+    margin-top: 15px;
+  }
+}
+
+/* Nest Hub (1024x600) */
+@media screen and (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+  .login-section {
+    padding: 15px;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    width: 70%;
+    max-width: 350px;
+  }
+  
+  .brand {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  
+  .login-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .login-form label {
+    font-size: 1rem;
+    margin-top: 6px;
+  }
+  
+  .login-form input {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 8px 20px;
+    font-size: 1.1rem;
+    margin-top: 15px;
+  }
+}
+
+/* Nest Hub Max (1280x800) */
+@media screen and (max-width: 1280px) and (max-height: 800px) and (orientation: landscape) {
+  .login-section {
+    padding: 20px;
+  }
+  
+  .login-container {
+    width: 60%;
+    max-width: 400px;
+  }
+  
+  .brand {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  
+  .login-title {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .login-form label {
+    font-size: 1.1rem;
+    margin-top: 8px;
+  }
+  
+  .login-form input {
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+}
+
+/* Landscape Orientation for Mobile Devices */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .login-section {
+    padding: 8px;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    width: 80%;
+    max-width: 350px;
+  }
+  
+  .brand {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+    margin-top: 8px;
+  }
+  
+  .login-title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .login-form {
+    gap: 4px;
+  }
+  
+  .login-form label {
+    font-size: 0.85rem;
+    margin-top: 4px;
+  }
+  
+  .login-form input {
+    padding: 6px;
+    font-size: 14px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 6px 15px;
+    font-size: 0.9rem;
+    margin-top: 8px;
+  }
+}
+
+/* Mini Laptops & Netbooks (1024px - 1200px) */
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+  .login-container {
+    width: 85%;
+    max-width: 480px;
+  }
+  
+  .brand {
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+    margin-top: 28px;
+  }
+  
+  .login-title {
+    font-size: 1.7rem;
+    margin-bottom: 28px;
+  }
+  
+  .login-form label {
+    font-size: 1.35rem;
+    margin-top: 13px;
+  }
+  
+  .login-form input {
+    padding: 11px;
+    font-size: 15px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    max-width: 480px;
+    padding: 11px 70px;
+    font-size: 1.7rem;
+    margin-top: 28px;
+  }
+}
+
+/* Very Small Screens (280px and below) */
+@media screen and (max-width: 280px) {
+  .login-section {
+    padding: 5px;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    width: 95%;
+    max-width: 270px;
+  }
+  
+  .brand {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+    margin-top: 8px;
+  }
+  
+  .login-title {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .login-form {
+    gap: 5px;
+  }
+  
+  .login-form label {
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
+  
+  .login-form input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 3px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+}
+
+/* Tablet Portrait Mode Specific */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .login-section {
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 50px;
+  }
+}
+
+/* Tablet Landscape Mode Specific */
+@media screen and (max-width: 1024px) and (orientation: landscape) and (min-width: 768px) {
+  .login-section {
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    width: 70%;
+    max-width: 400px;
+  }
+  
+  .brand {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    margin-top: 15px;
+  }
+  
+  .login-title {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .login-form input {
+    min-height: 44px;
+    font-size: 16px;
+  }
+  
+  .submit-btn {
+    min-height: 44px;
+    font-size: 16px;
+  }
+  
+  .login-form input:focus {
+    outline: 2px solid #16404D;
+    outline-offset: 2px;
+  }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .login-form input {
+    border-width: 0.5px;
+  }
+  
+  .submit-btn {
+    border-radius: 6px;
+  }
+}
+
+/*hut trekking mountain*/
+.hero2-banner {
+  background-image: url('des\ 1.png');
+  background-size: cover;
+  background-position: center;
+
+  padding: 60px 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+/*Hut Northern sea*/
+.hero1-banner {
+
+  background-image: url('des\ 2.png');
+  background-size: cover;
+  background-position: center;
+
+  padding: 60px 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+/*Hut Green Trekking*/
+.hero-banner {
+  background-image: url('des\ 3.png');
+  background-size: cover;
+  background-position: center;
+
+  padding: 60px 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.hero-content {
+  max-width: 800px;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 90px;
+}
+
+.rating {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: gold;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-weight: 700;
+
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.tags i {
+  margin-right: 6px;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.green {
+  background-color: #4caf50;
+}
+
+.orange {
+  background-color: #ec8415;
+}
+
+.grey {
+  background-color: #898787;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.included h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.included ul {
+  list-style: none;
+}
+
+.included li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.included i {
+  margin-right: 8px;
+}
+
+.price-box {
+  margin: 20px 0 10px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+.note {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.cta-btn {
+  padding: 12px 20px;
+  font-size: 14px;
+  border: none;
+  background-color: #003366;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cta-btn i {
+  margin-right: 8px;
+}
+
+/*Depart dates*/
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.left-container {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.right-container {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  margin-top: 50px;
+}
+
+.left-header {
+
+  color: #000;
+  padding: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.dates-content {
+  background: #f8f9fa;
+}
+
+.itinerary-content {
+  padding: 20px;
+  background: white;
+}
+
+.month-section {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.month-header {
+  background: #16404D;
+  color: white;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.month-header:hover {
+  background: #3d6b76;
+}
+
+.arrow {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotated {
+  transform: rotate(180deg);
+}
+
+.dates-container {
+  background: rgb(215, 253, 255);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.dates-container.expanded {
+  max-height: 500px;
+}
+
+.date-item {
+  padding: 15px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-item:last-child {
+  border-bottom: none;
+}
+
+.date-info {
+  flex: 1;
+}
+
+.date-main {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.date-sub {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+
+
+.status {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status.sold-out {
+  color: red;
+}
+
+.status.available {
+  color: #2ed573;
+  font-size: 1.3rem;
+
+}
+
+
+.status.fully-booked {
+  color: red;
+  font-size: 1.3rem;
+}
+
+.book-btn {
+  background: transparent;
+  color: #000;
+  border: 2px solid #ccc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:disabled {
+
+  cursor: not-allowed;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 10px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  background-color: #d1ecf9;
+  border-radius: 10px;
+
+}
+
+.section-header:hover {
+  color: #4a7c89;
+}
+
+.section-icon {
+  font-size: 20px;
+}
+
+.section-title {
+  font-size: 0.5rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.section-arrow {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.section-content {
+  padding: 20px 0;
+  line-height: 1.6;
+  color: #666;
+  display: none;
+}
+
+.section-content.expanded {
+  display: block;
+}
+
+.weather-section {
+  border-top: 1px solid #e0e0e0;
+  margin-top: 20px;
+}
+
+.weather-section .section-arrow {
+  transform: rotate(180deg);
+}
+
+.day-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #000;
+}
+
+.day-section:last-child {
+  border-bottom: none;
+}
+
+.day-section h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.day-section h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.day-image,
+.food-image,
+.accommodation-image,
+.difficulty-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.hiking-info {
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  color: #000;
+}
+
+.hiking-icon {
+  font-size: 18px;
+}
+
+.food-day {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.day-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.day-icon {
+  font-size: 16px;
+}
+
+.day-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.accommodation-type {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.meal-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.meal-item {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.meal-item.available {
+  color: #2ed573;
+  background: rgba(46, 213, 115, 0.1);
+}
+
+.meal-item.unavailable {
+  color: #ff4757;
+  background: rgba(255, 71, 87, 0.1);
+}
+
+.food-section,
+.accommodation-section,
+.difficulty-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.food-section h4,
+.accommodation-section h4,
+.difficulty-section h4 {
+  color: #4a7c89;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Large Tablets & Small Laptops (1024px - 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .main-container {
+        max-width: 95%;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    .left-header {
+        font-size: 1.6rem;
+        padding: 18px;
+    }
+    
+    .date-main {
+        font-size: 1.3rem;
+    }
+    
+    .day-section h3 {
+        font-size: 20px;
+    }
+    
+    .day-section h4 {
+        font-size: 18px;
+    }
+}
+
+/* iPad Pro & Large Tablets (768px - 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .main-container {
+        max-width: 95%;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    .right-container {
+        margin-top: 30px;
+    }
+    
+    .left-header {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    
+    .itinerary-content {
+        padding: 15px;
+    }
+    
+    .month-header {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+    
+    .date-item {
+        padding: 12px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .price-section {
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .date-main {
+        font-size: 1.2rem;
+    }
+    
+    .status.available, .status.fully-booked {
+        font-size: 1.1rem;
+    }
+    
+    .day-section h3 {
+        font-size: 18px;
+    }
+    
+    .day-section h4 {
+        font-size: 16px;
+    }
+    
+    .section-content {
+        padding: 15px 0;
+    }
+}
+
+/* iPad Portrait & Small Tablets (600px - 767px) */
+@media screen and (max-width: 767px) and (min-width: 600px) {
+    .main-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    
+    .right-container {
+        margin-top: 0;
+    }
+    
+    .left-header {
+        font-size: 1.4rem;
+        padding: 15px;
+    }
+    
+    .itinerary-content {
+        padding: 15px;
+    }
+    
+    .month-header {
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+    
+    .date-item {
+        padding: 12px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .price-section {
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .date-main {
+        font-size: 1.1rem;
+    }
+    
+    .date-sub {
+        font-size: 0.85rem;
+    }
+    
+    .status.available, .status.fully-booked {
+        font-size: 1rem;
+    }
+    
+    .book-btn {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+    
+    .section-header {
+        padding: 12px 8px;
+    }
+    
+    .section-title {
+        font-size: 0.45rem;
+    }
+    
+    .day-section {
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+    
+    .day-section h3 {
+        font-size: 16px;
+    }
+    
+    .day-section h4 {
+        font-size: 14px;
+    }
+    
+    .day-image, .food-image, .accommodation-image, .difficulty-image {
+        height: 120px;
+        margin: 8px 0;
+    }
+    
+    .hiking-info {
+        font-size: 16px;
+    }
+    
+    .food-day {
+        padding: 12px;
+    }
+}
+
+/* Mobile Landscape & Large Phones (480px - 599px) */
+@media screen and (max-width: 599px) and (min-width: 480px) {
+    .main-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 10px;
+        max-width: 100%;
+    }
+    
+    .left-container, .right-container {
+        border-radius: 8px;
+    }
+    
+    .right-container {
+        margin-top: 0;
+    }
+    
+    .left-header {
+        font-size: 1.3rem;
+        padding: 12px;
+    }
+    
+    .itinerary-content {
+        padding: 12px;
+    }
+    
+    .month-header {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    
+    .date-item {
+        padding: 10px 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .date-main {
+        font-size: 1rem;
+    }
+    
+    .date-sub {
+        font-size: 0.8rem;
+    }
+    
+    .status.available, .status.fully-booked {
+        font-size: 0.9rem;
+    }
+    
+    .book-btn {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    
+    .section-header {
+        padding: 10px 6px;
+    }
+    
+    .section-title {
+        font-size: 0.4rem;
+    }
+    
+    .section-icon {
+        font-size: 18px;
+    }
+    
+    .day-section {
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+    }
+    
+    .day-section h3 {
+        font-size: 15px;
+    }
+    
+    .day-section h4 {
+        font-size: 13px;
+    }
+    
+    .day-image, .food-image, .accommodation-image, .difficulty-image {
+        height: 100px;
+        margin: 6px 0;
+    }
+    
+    .hiking-info {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    
+    .food-day {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .meal-options {
+        gap: 8px;
+    }
+    
+    .meal-item {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+}
+
+/* Small Mobile Phones (320px - 479px) */
+@media screen and (max-width: 479px) {
+    .main-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 8px;
+        max-width: 100%;
+    }
+    
+    .left-container, .right-container {
+        border-radius: 6px;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+    
+    .right-container {
+        margin-top: 0;
+    }
+    
+    .left-header {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    
+    .itinerary-content {
+        padding: 10px;
+    }
+    
+    .month-header {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    
+    .date-item {
+        padding: 8px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    
+    .date-main {
+        font-size: 0.95rem;
+    }
+    
+    .date-sub {
+        font-size: 0.75rem;
+    }
+    
+    .price-section {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    
+    .status.available, .status.fully-booked {
+        font-size: 0.8rem;
+    }
+    
+    .book-btn {
+        font-size: 9px;
+        padding: 4px 8px;
+    }
+    
+    .section-header {
+        padding: 8px 5px;
+        gap: 5px;
+    }
+    
+    .section-title {
+        font-size: 0.35rem;
+    }
+    
+    .section-icon {
+        font-size: 16px;
+    }
+    
+    .section-content {
+        padding: 10px 0;
+    }
+    
+    .day-section {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+    
+    .day-section h3 {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    
+    .day-section h4 {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    .day-image, .food-image, .accommodation-image, .difficulty-image {
+        height: 80px;
+        margin: 5px 0;
+        border-radius: 6px;
+    }
+    
+    .hiking-info {
+        font-size: 12px;
+        padding: 5px 8px;
+        gap: 5px;
+    }
+    
+    .hiking-icon {
+        font-size: 14px;
+    }
+    
+    .food-day {
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+    
+    .day-header {
+        gap: 5px;
+        margin-bottom: 6px;
+    }
+    
+    .day-icon {
+        font-size: 14px;
+    }
+    
+    .accommodation-type {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    .meal-options {
+        gap: 5px;
+    }
+    
+    .meal-item {
+        font-size: 9px;
+        padding: 2px 5px;
+    }
+    
+    .food-section h4, .accommodation-section h4, .difficulty-section h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Google Nest Hub (1024x600) */
+@media screen and (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+    .main-container {
+        max-width: 95%;
+        gap: 10px;
+        padding: 0 10px;
+    }
+    
+    .left-header {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+    
+    .itinerary-content {
+        padding: 10px;
+    }
+    
+    .day-section {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+    
+    .day-image, .food-image, .accommodation-image, .difficulty-image {
+        height: 80px;
+    }
+    
+    .section-content {
+        padding: 10px 0;
+    }
+}
+
+/* Google Nest Hub Max (1280x800) */
+@media screen and (min-width: 1200px) and (max-width: 1280px) and (max-height: 800px) {
+    .main-container {
+        max-width: 98%;
+        gap: 15px;
+    }
+    
+    .left-header {
+        font-size: 1.6rem;
+    }
+    
+    .day-section h3 {
+        font-size: 20px;
+    }
+    
+    .day-section h4 {
+        font-size: 18px;
+    }
+}
+
+/* iPhone SE and similar small screens (375px and below) */
+@media screen and (max-width: 375px) {
+    .main-container {
+        padding: 0 5px;
+        gap: 8px;
+    }
+    
+    .left-header {
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+    
+    .month-header {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+    
+    .date-main {
+        font-size: 0.9rem;
+    }
+    
+    .date-sub {
+        font-size: 0.7rem;
+    }
+    
+    .status.available, .status.fully-booked {
+        font-size: 0.7rem;
+    }
+    
+    .section-title {
+        font-size: 0.3rem;
+    }
+    
+    .day-section h3 {
+        font-size: 13px;
+    }
+    
+    .day-section h4 {
+        font-size: 11px;
+    }
+    
+    .hiking-info {
+        font-size: 11px;
+    }
+}
+
+
+
+/*About Us*/
+.policy-section {
+  max-width: 1300px;
+  margin: 50px 90px;
+  padding: 20px;
+}
+
+.policy-section p {
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #000;
+}
+
+.policy-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.policy-section li {
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+}
+/* =================== RESPONSIVE MEDIA QUERIES =================== */
+
+/* Large Desktop (1920px and above) */
+@media screen and (min-width: 1920px) {
+  .policy-section {
+    max-width: 1400px;
+    margin: 60px auto;
+    padding: 25px;
+  }
+  
+  .policy-section p {
+    font-size: 2.1rem;
+    margin-bottom: 1.3rem;
+  }
+  
+  .policy-section li {
+    font-size: 2.1rem;
+    margin-bottom: 0.9rem;
+  }
+}
+
+/* Standard Desktop (1200px to 1919px) */
+@media screen and (max-width: 1919px) and (min-width: 1200px) {
+  .policy-section {
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+}
+
+/* Mini Laptops / Small Laptops (992px to 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .policy-section {
+    max-width: 950px;
+    margin: 40px 60px;
+    padding: 18px;
+  }
+  
+  .policy-section p {
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .policy-section ul {
+    padding-left: 1.3rem;
+  }
+  
+  .policy-section li {
+    font-size: 1.8rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
+/* Tablets Landscape (768px to 991px) */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .policy-section {
+    max-width: 100%;
+    margin: 30px 40px;
+    padding: 15px;
+  }
+  
+  .policy-section p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .policy-section ul {
+    padding-left: 1.2rem;
+  }
+  
+  .policy-section li {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* Tablets Portrait (481px to 767px) */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .policy-section {
+    max-width: 100%;
+    margin: 25px 30px;
+    padding: 12px;
+  }
+  
+  .policy-section p {
+    font-size: 1.4rem;
+    margin-bottom: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .policy-section ul {
+    padding-left: 1rem;
+  }
+  
+  .policy-section li {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Mobile Devices (320px to 480px) */
+@media screen and (max-width: 480px) {
+  .policy-section {
+    max-width: 100%;
+    margin: 20px 15px;
+    padding: 10px;
+  }
+  
+  .policy-section p {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  .policy-section ul {
+    padding-left: 0.8rem;
+  }
+  
+  .policy-section li {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+/* iPhone 14 Pro Max, iPhone 13 Pro Max (428px) */
+@media screen and (max-width: 428px) and (min-width: 415px) {
+  .policy-section {
+    margin: 22px 18px;
+    padding: 11px;
+  }
+  
+  .policy-section p {
+    font-size: 1.25rem;
+    margin-bottom: 0.85rem;
+  }
+  
+  .policy-section li {
+    font-size: 1.25rem;
+    margin-bottom: 0.45rem;
+  }
+}
+
+/* iPhone 14 Pro, iPhone 13 Pro (393px) */
+@media screen and (max-width: 414px) and (min-width: 376px) {
+  .policy-section {
+    margin: 20px 16px;
+    padding: 10px;
+  }
+  
+  .policy-section p {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .policy-section li {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+/* iPhone 12 mini, iPhone 13 mini (375px) */
+@media screen and (max-width: 375px) and (min-width: 361px) {
+  .policy-section {
+    margin: 18px 14px;
+    padding: 9px;
+  }
+  
+  .policy-section p {
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .policy-section li {
+    font-size: 1.15rem;
+    margin-bottom: 0.35rem;
+  }
+}
+
+/* Samsung Galaxy S21, S22 (360px) */
+@media screen and (max-width: 360px) and (min-width: 321px) {
+  .policy-section {
+    margin: 16px 12px;
+    padding: 8px;
+  }
+  
+  .policy-section p {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.3;
+  }
+  
+  .policy-section ul {
+    padding-left: 0.7rem;
+  }
+  
+  .policy-section li {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Very Small Devices (320px and below) */
+@media screen and (max-width: 320px) {
+  .policy-section {
+    margin: 15px 10px;
+    padding: 7px;
+  }
+  
+  .policy-section p {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.3;
+  }
+  
+  .policy-section ul {
+    padding-left: 0.6rem;
+  }
+  
+  .policy-section li {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+/* Google Nest Hub (1024px x 600px) */
+@media screen and (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+  .policy-section {
+    max-width: 900px;
+    margin: 25px 50px;
+    padding: 15px;
+  }
+  
+  .policy-section p {
+    font-size: 1.5rem;
+    margin-bottom: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .policy-section li {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Google Nest Hub Max (1280px x 800px) */
+@media screen and (max-width: 1280px) and (max-height: 800px) and (orientation: landscape) {
+  .policy-section {
+    max-width: 1100px;
+    margin: 35px 70px;
+    padding: 18px;
+  }
+  
+  .policy-section p {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .policy-section li {
+    font-size: 1.7rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* iPad Pro 12.9" (1024px x 1366px) Portrait */
+@media screen and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+  .policy-section {
+    max-width: 95%;
+    margin: 35px 40px;
+    padding: 16px;
+  }
+  
+  .policy-section p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .policy-section li {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
+/* iPad Pro 12.9" Landscape */
+@media screen and (max-width: 1366px) and (max-height: 1024px) and (orientation: landscape) {
+  .policy-section {
+    max-width: 1200px;
+    margin: 40px 80px;
+    padding: 18px;
+  }
+  
+  .policy-section p {
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .policy-section li {
+    font-size: 1.8rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
+/* iPad Air, iPad (768px x 1024px) Portrait */
+@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .policy-section {
+    max-width: 95%;
+    margin: 25px 30px;
+    padding: 14px;
+  }
+  
+  .policy-section p {
+    font-size: 1.4rem;
+    margin-bottom: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .policy-section li {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* iPad Air, iPad Landscape */
+@media screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .policy-section {
+    max-width: 90%;
+    margin: 20px 50px;
+    padding: 15px;
+  }
+  
+  .policy-section p {
+    font-size: 1.5rem;
+    margin-bottom: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .policy-section li {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/*About1 */
+.impact-section {
+  max-width: 1200px;
+  margin-left: 120px;
+  line-height: 1.6;
+  margin-top: 50px;
+}
+
+.impact-block {
+  margin-bottom: 30px;
+}
+
+.impact-block h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.impact-block p {
+  font-size: 2rem;
+  margin: 6px 0;
+  color: #000;
+}
+
+/*About2*/
+.wild-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  line-height: 1.7;
+  color: #000;
+}
+
+.wild-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+}
+
+.wild-section h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color:#131313;
+}
+
+.wild-section p {
+  font-size: 1.9rem;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+/* =================== RESPONSIVE MEDIA QUERIES =================== */
+
+/* Large Desktop (1920px and above) */
+@media screen and (min-width: 1920px) {
+  .impact-section {
+    max-width: 1400px;
+    margin-left: 140px;
+    margin-top: 60px;
+  }
+  
+  .impact-block {
+    margin-bottom: 35px;
+  }
+  
+  .impact-block h3 {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+  }
+  
+  .impact-block p {
+    font-size: 2.2rem;
+    margin: 7px 0;
+  }
+}
+
+/* Standard Desktop (1200px to 1919px) */
+@media screen and (max-width: 1919px) and (min-width: 1200px) {
+  .impact-section {
+    max-width: 1200px;
+    margin-left: 120px;
+    margin-top: 50px;
+  }
+}
+
+/* Mini Laptops / Small Laptops (992px to 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .impact-section {
+    max-width: 900px;
+    margin-left: 80px;
+    margin-top: 40px;
+    line-height: 1.5;
+  }
+  
+  .impact-block {
+    margin-bottom: 25px;
+  }
+  
+  .impact-block h3 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  
+  .impact-block p {
+    font-size: 1.8rem;
+    margin: 5px 0;
+  }
+}
+
+/* Tablets Landscape (768px to 991px) */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .impact-section {
+    max-width: 100%;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 35px;
+    line-height: 1.5;
+  }
+  
+  .impact-block {
+    margin-bottom: 22px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.8rem;
+    margin-bottom: 7px;
+  }
+  
+  .impact-block p {
+    font-size: 1.6rem;
+    margin: 4px 0;
+  }
+}
+
+/* Tablets Portrait (481px to 767px) */
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .impact-section {
+    max-width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    line-height: 1.4;
+  }
+  
+  .impact-block {
+    margin-bottom: 20px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+  }
+  
+  .impact-block p {
+    font-size: 1.4rem;
+    margin: 3px 0;
+  }
+}
+
+/* Mobile Devices (320px to 480px) */
+@media screen and (max-width: 480px) {
+  .impact-section {
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+    line-height: 1.4;
+  }
+  
+  .impact-block {
+    margin-bottom: 18px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+  }
+  
+  .impact-block p {
+    font-size: 1.2rem;
+    margin: 2px 0;
+  }
+}
+
+/* iPhone 14 Pro Max, iPhone 13 Pro Max (428px) */
+@media screen and (max-width: 428px) and (min-width: 415px) {
+  .impact-section {
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 27px;
+  }
+  
+  .impact-block {
+    margin-bottom: 19px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.45rem;
+    margin-bottom: 5px;
+  }
+  
+  .impact-block p {
+    font-size: 1.25rem;
+    margin: 2px 0;
+  }
+}
+
+/* iPhone 14 Pro, iPhone 13 Pro (393px) */
+@media screen and (max-width: 414px) and (min-width: 376px) {
+  .impact-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+  }
+  
+  .impact-block {
+    margin-bottom: 18px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+  }
+  
+  .impact-block p {
+    font-size: 1.2rem;
+    margin: 2px 0;
+  }
+}
+
+/* iPhone 12 mini, iPhone 13 mini (375px) */
+@media screen and (max-width: 375px) and (min-width: 361px) {
+  .impact-section {
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 23px;
+  }
+  
+  .impact-block {
+    margin-bottom: 17px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.35rem;
+    margin-bottom: 4px;
+  }
+  
+  .impact-block p {
+    font-size: 1.15rem;
+    margin: 2px 0;
+  }
+}
+
+/* Samsung Galaxy S21, S22 (360px) */
+@media screen and (max-width: 360px) and (min-width: 321px) {
+  .impact-section {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 22px;
+    line-height: 1.3;
+  }
+  
+  .impact-block {
+    margin-bottom: 16px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+  }
+  
+  .impact-block p {
+    font-size: 1.1rem;
+    margin: 1px 0;
+  }
+}
+
+/* Very Small Devices (320px and below) */
+@media screen and (max-width: 320px) {
+  .impact-section {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    line-height: 1.3;
+  }
+  
+  .impact-block {
+    margin-bottom: 15px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+  }
+  
+  .impact-block p {
+    font-size: 1rem;
+    margin: 1px 0;
+  }
+}
+
+/* Google Nest Hub (1024px x 600px) */
+@media screen and (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+  .impact-section {
+    max-width: 850px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+    line-height: 1.4;
+  }
+  
+  .impact-block {
+    margin-bottom: 20px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.7rem;
+    margin-bottom: 6px;
+  }
+  
+  .impact-block p {
+    font-size: 1.5rem;
+    margin: 3px 0;
+  }
+}
+
+/* Google Nest Hub Max (1280px x 800px) */
+@media screen and (max-width: 1280px) and (max-height: 800px) and (orientation: landscape) {
+  .impact-section {
+    max-width: 1050px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 40px;
+    line-height: 1.5;
+  }
+  
+  .impact-block {
+    margin-bottom: 25px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.9rem;
+    margin-bottom: 7px;
+  }
+  
+  .impact-block p {
+    font-size: 1.7rem;
+    margin: 4px 0;
+  }
+}
+
+/* iPad Pro 12.9" (1024px x 1366px) Portrait */
+@media screen and (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+  .impact-section {
+    max-width: 90%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 35px;
+    line-height: 1.5;
+  }
+  
+  .impact-block {
+    margin-bottom: 22px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.8rem;
+    margin-bottom: 7px;
+  }
+  
+  .impact-block p {
+    font-size: 1.6rem;
+    margin: 4px 0;
+  }
+}
+
+/* iPad Pro 12.9" Landscape */
+@media screen and (max-width: 1366px) and (max-height: 1024px) and (orientation: landscape) {
+  .impact-section {
+    max-width: 1100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 45px;
+    line-height: 1.5;
+  }
+  
+  .impact-block {
+    margin-bottom: 27px;
+  }
+  
+  .impact-block h3 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  
+  .impact-block p {
+    font-size: 1.8rem;
+    margin: 5px 0;
+  }
+}
+
+/* iPad Air, iPad (768px x 1024px) Portrait */
+@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+  .impact-section {
+    max-width: 90%;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 30px;
+    line-height: 1.4;
+  }
+  
+  .impact-block {
+    margin-bottom: 20px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+  }
+  
+  .impact-block p {
+    font-size: 1.4rem;
+    margin: 3px 0;
+  }
+}
+
+/* iPad Air, iPad Landscape */
+@media screen and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+  .impact-section {
+    max-width: 85%;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 25px;
+    line-height: 1.4;
+  }
+  
+  .impact-block {
+    margin-bottom: 18px;
+  }
+  
+  .impact-block h3 {
+    font-size: 1.7rem;
+    margin-bottom: 6px;
+  }
+  
+  .impact-block p {
+    font-size: 1.5rem;
+    margin: 3px 0;
+  }
+}
+
+/* Large Screens (Large Desktops) */
+@media (min-width: 1400px) {
+  .wild-section {
+    max-width: 1400px;
+    margin: 60px auto;
+  }
+}
+
+/* Medium Laptops & Small Desktops */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .wild-section {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 0 25px;
+  }
+  
+  .wild-section h2,
+  .wild-section h3 {
+    font-size: 1.8rem;
+  }
+  
+  .wild-section p {
+    font-size: 1.7rem;
+  }
+}
+
+/* Mini Laptops & Large Tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+  .wild-section {
+    max-width: 720px;
+    margin: 35px auto;
+    padding: 0 30px;
+  }
+  
+  .wild-section h2,
+  .wild-section h3 {
+    font-size: 1.6rem;
+  }
+  
+  .wild-section p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablets Portrait & Landscape */
+@media (max-width: 767px) and (min-width: 577px) {
+  .wild-section {
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 0 25px;
+  }
+  
+  .wild-section h2,
+  .wild-section h3 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+  }
+  
+  .wild-section p {
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+  }
+}
+
+/* Large Mobile Devices (iPhone Pro Max, Samsung Galaxy S series) */
+@media (max-width: 576px) and (min-width: 415px) {
+  .wild-section {
+    max-width: 100%;
+    margin: 25px auto;
+    padding: 0 20px;
+  }
+  
+  .wild-section h2,
+  .wild-section h3 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .wild-section p {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+}
+
+/* Standard Mobile Devices (iPhone 12, 13, 14, Samsung Galaxy A series) */
+@media (max-width: 414px) and (min-width: 376px) {
+  .wild-section {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 18px;
+  }
+  
+  .wild-section h2,
+  .wild-section h3 {
+    font-size: 1.2rem;
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .wild-section p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* Small Mobile Devices (iPhone SE, older models) */
+@media (max-width: 375px) and (min-width: 321px) {
+  .wild-section {
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 0 15px;
+  }
+  
+  .wild-section h2,
+  .wild-section h3 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 6px;
+  }
+  
+  .wild-section p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+
+/* Very Small Mobile Devices */
+@media (max-width: 320px) {
+  .wild-section {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 0 12px;
+  }
+  
+  .wild-section h2,
+  .wild-section h3 {
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .wild-section p {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+}
+
+/* Nest Hub (1024x600) */
+@media (min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 600px) {
+  .wild-section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 30px;
+  }
+  
+  .wild-section h2,
+  .wild-section h3 {
+    font-size: 1.5rem;
+  }
+  
+  .wild-section p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Nest Hub Max (1280x800) */
+@media (min-width: 1280px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 800px) {
+  .wild-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 35px;
+  }
+  
+  .wild-section h2,
+  .wild-section h3 {
+    font-size: 1.7rem;
+  }
+  
+  .wild-section p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Tablet Landscape Orientation */
+@media (max-width: 1024px) and (min-width: 768px) and (orientation: landscape) {
+  .wild-section {
+    max-width: 90%;
+    margin: 25px auto;
+    padding: 0 25px;
+  }
+  
+  .wild-section h2,
+  .wild-section h3 {
+    font-size: 1.4rem;
+  }
+  
+  .wild-section p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile Landscape Orientation */
+@media (max-width: 767px) and (orientation: landscape) {
+  .wild-section {
+    max-width: 95%;
+    margin: 15px auto;
+    padding: 0 20px;
+  }
+  
+  .wild-section h2,
+  .wild-section h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .wild-section p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+
+
+
+/*Team*/
+.team-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  color: #000;
+
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+
+.team-section ul {
+  list-style-type: disc;
+  text-align: left;
+  margin: 40px 40px;
+  max-width: 700px;
+  padding-left: 20px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.team-card {
+  width: 260px;
+  text-align: center;
+}
+
+.team-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  margin: 12px 0 6px;
+  font-weight: bold;
+}
+
+.team-card p {
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.team-card .role {
+  color: #16404D;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Small Mobile Devices (320px - 480px) */
+@media screen and (max-width: 480px) {
+  .team-section {
+    margin: 30px 15px;
+    padding: 0 10px;
+  }
+  
+  .team-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  .team-section ul {
+    margin: 20px 10px;
+    padding-left: 15px;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    justify-items: center;
+  }
+  
+  .team-card {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .team-card img {
+    height: 180px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+  }
+  
+  .team-card p {
+    font-size: 0.9rem;
+  }
+  
+  .team-card .role {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+}
+
+/* iPhone SE, iPhone 5/5s (320px width) */
+@media screen and (max-width: 320px) {
+  .team-section {
+    margin: 25px 10px;
+    padding: 0 5px;
+  }
+  
+  .team-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .team-section ul {
+    margin: 18px 8px;
+    padding-left: 12px;
+    font-size: 0.95rem;
+  }
+  
+  .team-grid {
+    gap: 20px;
+  }
+  
+  .team-card {
+    max-width: 260px;
+  }
+  
+  .team-card img {
+    height: 160px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .team-card p {
+    font-size: 0.85rem;
+  }
+  
+  .team-card .role {
+    font-size: 1rem;
+  }
+}
+
+/* iPhone 6/7/8, iPhone X/11/12/13 mini (375px width) */
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .team-section {
+    margin: 35px 18px;
+    padding: 0 12px;
+  }
+  
+  .team-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .team-section ul {
+    margin: 22px 12px;
+    padding-left: 16px;
+    font-size: 1.1rem;
+  }
+  
+  .team-grid {
+    gap: 28px;
+  }
+  
+  .team-card {
+    max-width: 300px;
+  }
+  
+  .team-card img {
+    height: 185px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.25rem;
+  }
+  
+  .team-card p {
+    font-size: 0.95rem;
+  }
+  
+  .team-card .role {
+    font-size: 1.15rem;
+  }
+}
+
+/* iPhone 12/13/14 Pro Max, Samsung Galaxy S series (428px width) */
+@media screen and (min-width: 415px) and (max-width: 480px) {
+  .team-section {
+    margin: 40px 20px;
+    padding: 0 15px;
+  }
+  
+  .team-section h2 {
+    font-size: 1.6rem;
+  }
+  
+  .team-section ul {
+    margin: 25px 15px;
+    padding-left: 18px;
+    font-size: 1.15rem;
+  }
+  
+  .team-grid {
+    gap: 30px;
+  }
+  
+  .team-card {
+    max-width: 320px;
+  }
+  
+  .team-card img {
+    height: 190px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .team-card p {
+    font-size: 0.98rem;
+  }
+  
+  .team-card .role {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small Tablets Portrait (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .team-section {
+    margin: 45px 25px;
+    padding: 0 20px;
+  }
+  
+  .team-section h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  
+  .team-section ul {
+    margin: 30px 20px;
+    padding-left: 18px;
+    font-size: 1.2rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    justify-items: center;
+  }
+  
+  .team-card {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .team-card img {
+    height: 195px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.35rem;
+    margin: 11px 0 5px;
+  }
+  
+  .team-card p {
+    font-size: 0.95rem;
+  }
+  
+  .team-card .role {
+    font-size: 1.2rem;
+    margin-bottom: 9px;
+  }
+}
+
+/* Tablets Landscape & Mini Laptops (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .team-section {
+    margin: 50px 30px;
+    padding: 0 25px;
+  }
+  
+  .team-section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .team-section ul {
+    margin: 35px 25px;
+    padding-left: 19px;
+    font-size: 1.35rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .team-card {
+    width: 100%;
+    max-width: 220px;
+  }
+  
+  .team-card img {
+    height: 180px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .team-card p {
+    font-size: 0.9rem;
+  }
+  
+  .team-card .role {
+    font-size: 1.15rem;
+  }
+}
+
+/* Medium Laptops (1025px - 1280px) */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .team-section {
+    margin: 55px auto;
+    padding: 0 30px;
+  }
+  
+  .team-section h2 {
+    font-size: 1.9rem;
+  }
+  
+  .team-section ul {
+    margin: 38px 35px;
+    font-size: 1.5rem;
+  }
+  
+  .team-grid {
+    gap: 35px;
+  }
+  
+  .team-card {
+    width: 240px;
+  }
+  
+  .team-card img {
+    height: 190px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.4rem;
+  }
+  
+  .team-card .role {
+    font-size: 1.25rem;
+  }
+}
+
+/* Google Nest Hub (1024x600) */
+@media screen and (min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 600px) {
+  .team-section {
+    margin: 30px 25px;
+    padding: 0 20px;
+  }
+  
+  .team-section h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  
+  .team-section ul {
+    margin: 25px 20px;
+    padding-left: 16px;
+    font-size: 1rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .team-card {
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .team-card img {
+    height: 140px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.1rem;
+    margin: 8px 0 4px;
+  }
+  
+  .team-card p {
+    font-size: 0.8rem;
+  }
+  
+  .team-card .role {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+}
+
+/* Google Nest Hub Max (1280x800) */
+@media screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 800px) {
+  .team-section {
+    margin: 40px 30px;
+    padding: 0 25px;
+  }
+  
+  .team-section h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  .team-section ul {
+    margin: 30px 25px;
+    padding-left: 18px;
+    font-size: 1.2rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    justify-items: center;
+  }
+  
+  .team-card {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .team-card img {
+    height: 160px;
+  }
+  
+  .team-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+  }
+  
+  .team-card p {
+    font-size: 0.85rem;
+  }
+  
+  .team-card .role {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+}
+
+/* Landscape Orientation for Mobile Devices */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .team-section {
+    margin: 20px 15px;
+    padding: 0 10px;
+  }
+  
+  .team-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+  
+  .team-section ul {
+    margin: 15px 10px;
+    padding-left: 15px;
+    font-size: 0.95rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+  
+  .team-card {
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .team-card img {
+    height: 120px;
+  }
+  
+  .team-card h3 {
+    font-size: 1rem;
+    margin: 8px 0 4px;
+  }
+  
+  .team-card p {
+    font-size: 0.8rem;
+  }
+  
+  .team-card .role {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+}
+
+/* Very Small Landscape Phones */
+@media screen and (max-height: 320px) and (orientation: landscape) {
+  .team-section {
+    margin: 15px 10px;
+  }
+  
+  .team-section h2 {
+    font-size: 1.2rem;
+  }
+  
+  .team-section ul {
+    margin: 12px 8px;
+    font-size: 0.9rem;
+  }
+  
+  .team-grid {
+    gap: 15px;
+  }
+  
+  .team-card {
+    max-width: 160px;
+  }
+  
+  .team-card img {
+    height: 100px;
+  }
+  
+  .team-card h3 {
+    font-size: 0.95rem;
+    margin: 6px 0 3px;
+  }
+  
+  .team-card p {
+    font-size: 0.75rem;
+  }
+  
+  .team-card .role {
+    font-size: 0.85rem;
+  }
+}
+
+/* Ultra-wide screens (1400px+) */
+@media screen and (min-width: 1400px) {
+  .team-section {
+    max-width: 1200px;
+    margin: 60px auto;
+  }
+  
+  .team-grid {
+    justify-content: center;
+  }
+}
+/*Contact Us */
+.support-section {
+  max-width: 1300px;
+  margin: 40px 80px;
+  padding: 30px;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+.support-section h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  color: #000;
+  font-weight: 500;
+}
+
+.support-section ul {
+  margin-left: 20px;
+  padding-left: 20px;
+  list-style: disc;
+  font-size: 2rem;
+  color: #000;
+}
+
+.support-section ul ul {
+  list-style: disc;
+  margin-top: 8px;
+  color: #000;
+}
+
+.support-section p {
+  margin: 10px 0;
+  font-size: 2rem;
+  color: #000;
+
+}
+
+.support-section strong {
+  color: #000;
+}
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+
+/* Small Mobile Devices (320px - 480px) */
+@media screen and (max-width: 480px) {
+  .support-section {
+    margin: 20px 15px;
+    padding: 20px 15px;
+  }
+  
+  .support-section h3 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+  }
+  
+  .support-section ul {
+    margin-left: 10px;
+    padding-left: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .support-section ul ul {
+    margin-top: 6px;
+    font-size: 1rem;
+  }
+  
+  .support-section p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+  }
+}
+
+/* iPhone SE, iPhone 5/5s (320px width) */
+@media screen and (max-width: 320px) {
+  .support-section {
+    margin: 15px 10px;
+    padding: 15px 10px;
+  }
+  
+  .support-section h3 {
+    font-size: 1.2rem;
+    margin-top: 18px;
+  }
+  
+  .support-section ul {
+    margin-left: 8px;
+    padding-left: 12px;
+    font-size: 1rem;
+  }
+  
+  .support-section ul ul {
+    font-size: 0.95rem;
+  }
+  
+  .support-section p {
+    font-size: 1rem;
+  }
+}
+
+/* iPhone 6/7/8, iPhone X/11/12/13 mini (375px width) */
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .support-section {
+    margin: 20px 18px;
+    padding: 22px 18px;
+  }
+  
+  .support-section h3 {
+    font-size: 1.4rem;
+    margin-top: 22px;
+  }
+  
+  .support-section ul {
+    margin-left: 12px;
+    padding-left: 16px;
+    font-size: 1.15rem;
+  }
+  
+  .support-section ul ul {
+    font-size: 1.05rem;
+  }
+  
+  .support-section p {
+    font-size: 1.15rem;
+  }
+}
+
+/* iPhone 12/13/14 Pro Max, Samsung Galaxy S series (428px width) */
+@media screen and (min-width: 415px) and (max-width: 480px) {
+  .support-section {
+    margin: 25px 20px;
+    padding: 25px 20px;
+  }
+  
+  .support-section h3 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+  }
+  
+  .support-section ul {
+    margin-left: 15px;
+    padding-left: 18px;
+    font-size: 1.2rem;
+  }
+  
+  .support-section ul ul {
+    font-size: 1.1rem;
+  }
+  
+  .support-section p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Small Tablets Portrait (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .support-section {
+    margin: 30px 25px;
+    padding: 28px 25px;
+  }
+  
+  .support-section h3 {
+    font-size: 1.6rem;
+    margin-top: 28px;
+  }
+  
+  .support-section ul {
+    margin-left: 16px;
+    padding-left: 19px;
+    font-size: 1.3rem;
+  }
+  
+  .support-section ul ul {
+    margin-top: 7px;
+    font-size: 1.2rem;
+  }
+  
+  .support-section p {
+    margin: 9px 0;
+    font-size: 1.3rem;
+  }
+}
+
+/* Tablets Landscape & Mini Laptops (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .support-section {
+    margin: 35px 40px;
+    padding: 30px 35px;
+  }
+  
+  .support-section h3 {
+    font-size: 1.8rem;
+    margin-top: 28px;
+  }
+  
+  .support-section ul {
+    margin-left: 18px;
+    padding-left: 20px;
+    font-size: 1.6rem;
+  }
+  
+  .support-section ul ul {
+    font-size: 1.5rem;
+  }
+  
+  .support-section p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Medium Laptops (1025px - 1280px) */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .support-section {
+    margin: 38px 60px;
+    padding: 30px 40px;
+  }
+  
+  .support-section h3 {
+    font-size: 1.9rem;
+    margin-top: 29px;
+  }
+  
+  .support-section ul {
+    margin-left: 19px;
+    padding-left: 20px;
+    font-size: 1.8rem;
+  }
+  
+  .support-section ul ul {
+    font-size: 1.7rem;
+  }
+  
+  .support-section p {
+    font-size: 1.8rem;
+  }
+}
+
+/* Google Nest Hub (1024x600) */
+@media screen and (min-width: 1024px) and (max-width: 1024px) and (min-height: 600px) and (max-height: 600px) {
+  .support-section {
+    margin: 25px 30px;
+    padding: 20px 25px;
+    max-width: 90%;
+  }
+  
+  .support-section h3 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+  }
+  
+  .support-section ul {
+    margin-left: 15px;
+    padding-left: 18px;
+    font-size: 1.1rem;
+  }
+  
+  .support-section ul ul {
+    margin-top: 6px;
+    font-size: 1rem;
+  }
+  
+  .support-section p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+  }
+}
+
+/* Google Nest Hub Max (1280x800) */
+@media screen and (min-width: 1280px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 800px) {
+  .support-section {
+    margin: 30px 40px;
+    padding: 25px 30px;
+    max-width: 85%;
+  }
+  
+  .support-section h3 {
+    font-size: 1.6rem;
+    margin-top: 25px;
+  }
+  
+  .support-section ul {
+    margin-left: 18px;
+    padding-left: 20px;
+    font-size: 1.3rem;
+  }
+  
+  .support-section ul ul {
+    margin-top: 7px;
+    font-size: 1.2rem;
+  }
+  
+  .support-section p {
+    margin: 9px 0;
+    font-size: 1.3rem;
+  }
+}
+
+/* Landscape Orientation for Mobile Devices */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .support-section {
+    margin: 15px 20px;
+    padding: 15px 20px;
+  }
+  
+  .support-section h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+  
+  .support-section ul {
+    margin-left: 12px;
+    padding-left: 15px;
+    font-size: 1rem;
+  }
+  
+  .support-section ul ul {
+    margin-top: 5px;
+    font-size: 0.95rem;
+  }
+  
+  .support-section p {
+    margin: 6px 0;
+    font-size: 1rem;
+  }
+}
+
+/* Very Small Landscape Phones */
+@media screen and (max-height: 320px) and (orientation: landscape) {
+  .support-section {
+    margin: 10px 15px;
+    padding: 12px 15px;
+  }
+  
+  .support-section h3 {
+    font-size: 1.1rem;
+    margin-top: 12px;
+  }
+  
+  .support-section ul {
+    margin-left: 10px;
+    padding-left: 12px;
+    font-size: 0.9rem;
+  }
+  
+  .support-section ul ul {
+    font-size: 0.85rem;
+  }
+  
+  .support-section p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Ultra-wide screens (1400px+) */
+@media screen and (min-width: 1400px) {
+  .support-section {
+    margin: 40px auto;
+    max-width: 1200px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .support-section {
+    margin: 20px 0;
+    padding: 20px 0;
+    font-size: 12pt;
+  }
+  
+  .support-section h3 {
+    font-size: 14pt;
+    margin-top: 20pt;
+  }
+  
+  .support-section ul {
+    font-size: 11pt;
+  }
+  
+  .support-section p {
+    font-size: 11pt;
+  }
+}
+
+/*Booking*/
+.book-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.book-logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #16404D;
+  margin-bottom: 20px;
+  font-family: 'Dokdo', cursive;
+}
+
+.date-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.calendar-icon {
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border-radius: 3px;
+  position: relative;
+}
+
+.calendar-icon::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 3px;
+  right: 3px;
+  height: 2px;
+  background: #333;
+  border-radius: 1px;
+}
+
+.calendar-icon::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  background: white;
+  border-radius: 1px;
+}
+
+.date-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #16404D;
+
+}
+
+.date-range {
+  color: #000;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.travellers-section {
+  background: #e8f4f8;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.travellers-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.counter-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #333;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.counter-btn:hover {
+  background: #333;
+  color: white;
+}
+
+.counter-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.counter-btn:disabled:hover {
+  background: white;
+  color: #333;
+}
+
+.counter-display {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  min-width: 80px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-box {
+  background: #e8f4f8;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.info-title {
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  padding-left: 20px;
+}
+
+.info-text {
+  color: #131313;
+  line-height: 1.4;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding-left: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+   background: #e8f4f8;
+   padding:30px 40px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.country-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flag {
+  width: 24px;
+  height: 16px;
+  background: linear-gradient(to bottom, #ff9933 33%, white 33%, white 66%, #138808 66%);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.checkbox-group {
+  margin-bottom: 15px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.checkbox:checked {
+  background: #667eea;
+  border-color: #667eea;
+  position: relative;
+}
+
+.checkbox:checked::after {
+  content: '✓';
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-label {
+  color: #333;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.continue-btn {
+  width: 100%;
+  background-color: #16404D;
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.continue-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(74, 105, 189, 0.3);
+}
+
+/*Book Sucesss*/
+.confirmation-container {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.con-logo {
+  font-family: 'Dokdo', cursive;
+  font-size: 3rem;
+  color: #16404D;
+  margin-bottom: 30px;
+}
+
+.icon {
+  margin-bottom: 30px;
+}
+
+.message {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.sub-message {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 500;
+}
+
+/*Payment card details*/
+.paycard-container {
+  padding: 40px 60px;
+  margin: 50px 350px;
+  text-align: center;
+  line-height: 1.6;
+  color: #000;
+  max-width: 800px;
+}
+
+.paycard-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.price1 {
+  color: #000;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 20px;
+}
+
+.paycard-container p {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 20px;
+  ;
+}
+
+.paycard-container h3 {
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.paycard-section {
+  margin-bottom: 20px;
+
+}
+
+.pc-image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.pc-image img {
+  height: 40px;
+}
+
+.paycard-section h3 {
+  margin: 20px 10px 5px 10px;
+  font-size:1.8rem;
+  color:#131313;
+  text-align:left;
+}
+
+.card-number,
+.expiry,
+.cvv {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  min-height: 30px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight:600;
+}
+
+.paycard-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.address-section {
+  margin-top: 30px;
+}
+.address-section h3{
+  text-align: left;
+}
+
+.address-field {
+  margin-bottom: 15px;
+}
+
+.address-field textarea {
+  width: 100%;
+  padding: 10px;
+    color:#131313;
+      font-size:1.3rem;
+      font-weight:600;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 60px;
+}
+
+.address-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.address-grid input {
+  width: 100%;
+  padding: 10px;
+  color:#131313;
+  font-size:1.3rem;
+  border-radius: 4px;
+  box-sizing: border-box;
+   font-weight:600;
+}
+
+
+
+.cpay-now {
+  background-color: #16404D;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 30px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+/* Responsive Media Queries */
+
+/* Large Desktop (1400px+) - Original styles maintained */
+@media (min-width: 1400px) {
+  .paycard-container {
+    margin: 50px 350px;
+    max-width: 800px;
+  }
+}
+
+/* Standard Desktop (1200px - 1399px) */
+@media (max-width: 1399px) and (min-width: 1200px) {
+  .paycard-container {
+    margin: 50px 250px;
+    max-width: 700px;
+    padding: 35px 50px;
+  }
+}
+
+/* Mini Laptops (1024px - 1199px) */
+@media (max-width: 1199px) and (min-width: 1024px) {
+  .paycard-container {
+    margin: 40px 150px;
+    max-width: 600px;
+    padding: 30px 40px;
+  }
+  
+  .paycard-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .price1 {
+    font-size: 1.8rem;
+  }
+  
+  .paycard-container p {
+    font-size: 1.3rem;
+  }
+  
+  .paycard-container h3 {
+    font-size: 1.6rem;
+  }
+  
+  .paycard-section h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Nest Hub Max (1280x800) */
+@media (max-width: 1280px) and (min-width: 1024px) and (max-height: 800px) {
+  .paycard-container {
+    margin: 30px 100px;
+    padding: 25px 35px;
+  }
+  
+  .paycard-container h2 {
+    font-size: 1.7rem;
+  }
+  
+  .price1 {
+    font-size: 1.7rem;
+    margin: 15px;
+  }
+}
+
+/* Nest Hub (1024x600) */
+@media (max-width: 1024px) and (max-height: 600px) {
+  .paycard-container {
+    margin: 20px 50px;
+    padding: 20px 30px;
+  }
+  
+  .paycard-container h2 {
+    font-size: 1.5rem;
+  }
+  
+  .price1 {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+  
+  .paycard-container p {
+    font-size: 1.1rem;
+  }
+  
+  .paycard-section h3 {
+    font-size: 1.4rem;
+  }
+  
+  .card-number,
+  .expiry,
+  .cvv {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+  
+  .address-field textarea {
+    font-size: 1.1rem;
+  }
+  
+  .address-grid input {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablets Portrait (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .paycard-container {
+    margin: 30px 50px;
+    padding: 25px 30px;
+    max-width: 90%;
+  }
+  
+  .paycard-container h2 {
+    font-size: 1.7rem;
+  }
+  
+  .price1 {
+    font-size: 1.7rem;
+    margin: 15px;
+  }
+  
+  .paycard-container p {
+    font-size: 1.2rem;
+  }
+  
+  .paycard-section h3 {
+    font-size: 1.5rem;
+    margin: 15px 5px 5px 5px;
+  }
+  
+  .card-number,
+  .expiry,
+  .cvv {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+  
+  .address-field textarea {
+    font-size: 1.2rem;
+  }
+  
+  .address-grid input {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablets Landscape (1024px - 1366px) and (max-height: 1024px) */
+@media (max-width: 1366px) and (min-width: 1024px) and (max-height: 1024px) {
+  .paycard-container {
+    margin: 35px 120px;
+    padding: 25px 35px;
+  }
+  
+  .paycard-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .price1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large Mobile / Small Tablets (481px - 767px) */
+@media (max-width: 767px) and (min-width: 481px) {
+  .paycard-container {
+    margin: 20px 30px;
+    padding: 20px 25px;
+    max-width: 95%;
+  }
+  
+  .paycard-container h2 {
+    font-size: 1.5rem;
+  }
+  
+  .price1 {
+    font-size: 1.5rem;
+    margin: 15px;
+  }
+  
+  .paycard-container p {
+    font-size: 1.1rem;
+  }
+  
+  .paycard-container h3 {
+    font-size: 1.4rem;
+  }
+  
+  .paycard-section h3 {
+    font-size: 1.4rem;
+    margin: 15px 5px 5px 5px;
+  }
+  
+  .pc-image img {
+    height: 35px;
+  }
+  
+  .card-number,
+  .expiry,
+  .cvv {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+  
+  .paycard-details {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .address-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .address-field textarea {
+    font-size: 1.1rem;
+  }
+  
+  .address-grid input {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile Devices (320px - 480px) */
+@media (max-width: 480px) {
+  .paycard-container {
+    margin: 15px 20px;
+    padding: 15px 20px;
+    max-width: 95%;
+  }
+  
+  .paycard-container h2 {
+    font-size: 1.3rem;
+  }
+  
+  .price1 {
+    font-size: 1.3rem;
+    margin: 10px;
+  }
+  
+  .paycard-container p {
+    font-size: 1rem;
+  }
+  
+  .paycard-container h3 {
+    font-size: 1.2rem;
+  }
+  
+  .paycard-section h3 {
+    font-size: 1.2rem;
+    margin: 10px 5px 5px 5px;
+  }
+  
+  .pc-image img {
+    height: 30px;
+  }
+  
+  .card-number,
+  .expiry,
+  .cvv {
+    font-size: 1rem;
+    padding: 10px;
+    min-height: 25px;
+  }
+  
+  .paycard-details {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+  .address-section {
+    margin-top: 20px;
+  }
+  
+  .address-field {
+    margin-bottom: 10px;
+  }
+  
+  .address-field textarea {
+    font-size: 1rem;
+    min-height: 50px;
+  }
+  
+  .address-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+  .address-grid input {
+    font-size: 1rem;
+  }
+  
+  .cpay-now {
+    padding: 12px 25px;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+}
+
+/* iPhone Series (375px - 414px) */
+@media (max-width: 414px) and (min-width: 375px) {
+  .paycard-container {
+    margin: 15px 15px;
+    padding: 15px 18px;
+  }
+  
+  .paycard-container h2 {
+    font-size: 1.35rem;
+  }
+  
+  .price1 {
+    font-size: 1.35rem;
+  }
+}
+
+/* Samsung Galaxy Series (360px - 393px) */
+@media (max-width: 393px) and (min-width: 360px) {
+  .paycard-container {
+    margin: 12px 12px;
+    padding: 12px 15px;
+  }
+  
+  .paycard-container h2 {
+    font-size: 1.25rem;
+  }
+  
+  .price1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Small iPhone (iPhone SE, etc.) - (max-width: 374px) */
+@media (max-width: 374px) {
+  .paycard-container {
+    margin: 10px 10px;
+    padding: 10px 12px;
+  }
+  
+  .paycard-container h2 {
+    font-size: 1.2rem;
+  }
+  
+  .price1 {
+    font-size: 1.2rem;
+    margin: 8px;
+  }
+  
+  .paycard-container p {
+    font-size: 0.9rem;
+  }
+  
+  .paycard-container h3 {
+    font-size: 1.1rem;
+  }
+  
+  .paycard-section h3 {
+    font-size: 1.1rem;
+    margin: 8px 3px 3px 3px;
+  }
+  
+  .pc-image img {
+    height: 25px;
+  }
+  
+  .card-number,
+  .expiry,
+  .cvv {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  
+  .address-field textarea {
+    font-size: 0.9rem;
+    min-height: 45px;
+  }
+  
+  .address-grid input {
+    font-size: 0.9rem;
+  }
+  
+  .cpay-now {
+    padding: 10px 20px;
+    font-size: 13px;
+    margin: 15px 0;
+  }
+}
+
+/* Extra Small Devices (max-width: 359px) */
+@media (max-width: 359px) {
+  .paycard-container {
+    margin: 8px 8px;
+    padding: 8px 10px;
+  }
+  
+  .paycard-container h2 {
+    font-size: 1.1rem;
+  }
+  
+  .price1 {
+    font-size: 1.1rem;
+    margin: 6px;
+  }
+  
+  .paycard-container p {
+    font-size: 0.85rem;
+  }
+  
+  .paycard-container h3 {
+    font-size: 1rem;
+  }
+  
+  .paycard-section h3 {
+    font-size: 1rem;
+  }
+  
+  .pc-image img {
+    height: 22px;
+  }
+  
+  .card-number,
+  .expiry,
+  .cvv {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+  
+  .address-field textarea {
+    font-size: 0.85rem;
+    min-height: 40px;
+  }
+  
+  .address-grid input {
+    font-size: 0.85rem;
+  }
+  
+  .cpay-now {
+    padding: 8px 15px;
+    font-size: 12px;
+    margin: 12px 0;
+  }
+}
+
+/*footer*/
+.footer {
+  background-image: url(footer\ image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 2rem;
+  width: 100%;
+  height: auto; 
+  min-height: 70vh; 
+  box-sizing: border-box;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.footer-logo h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Dokdo', cursive;
+  margin-top: 150px;
+  margin-left: 50px;
+  color: #fff;
+}
+
+.footer-links {
+  margin-top: 180px;
+}
+
+.footer-links h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-copy {
+  font-size: 1.2rem;
+  margin-top: 50px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1440px) {
+  /* For laptops and smaller desktops */
+  .footer {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* For tablets landscape and small laptops */
+  .footer-logo h3 {
+    margin-top: 100px;
+    font-size: 2.2rem;
+  }
+  
+  .footer-links {
+    margin-top: 120px;
+  }
+  
+  .footer-links h4 {
+    font-size: 1.3rem;
+  }
+  
+  .footer-links ul li {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For tablets portrait and Nest Hub */
+  .footer {
+    min-height: 60vh;
+    padding: 1.5rem;
+      
+  }
+  
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-logo h3 {
+    margin: 80px 0 30px 0;
+    font-size: 2rem;
+  }
+  
+  .footer-links {
+    margin:0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer-links-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  
+  .footer-copy {
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  /* For larger phones and Nest Hub Max */
+  .footer {
+    min-height: 50vh;
+  }
+  
+  .footer-logo h3 {
+    margin: 60px 0 20px 0;
+    font-size: 1.8rem;
+  }
+  
+  .footer-links h4 {
+    font-size: 1.2rem;
+     margin-top:80px;
+  }
+  
+  .footer-links ul li {
+    font-size: 1rem;
+   
+  }
+  
+  .footer-copy {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For iPhone and Samsung Galaxy series */
+  .footer {
+    min-height: 45vh;
+    padding: 0.8rem;
+  }
+  
+  .footer-logo h3 {
+    margin: 50px 0 15px 0;
+    font-size: 1.6rem;
+  }
+  
+  .footer-links-container {
+    flex-direction: column;
+  }
+  
+  .footer-links {
+    margin-bottom: 50px;
+  }
+  
+  .footer-copy {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  /* For smaller phones like iPhone SE */
+  .footer-logo h3 {
+    font-size: 1.5rem;
+  }
+  
+  .footer-links h4 {
+    font-size: 1.1rem;
+   
+  }
+  
+  .footer-links ul li {
+    font-size: 0.9rem;
+    
+  }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+  /* For landscape mobile devices */
+  .footer {
+    min-height: 100vh;
+  }
+  
+  .footer-logo h3 {
+    margin-top: 60px;
+  }
+  
+  .footer-links {
+    margin-top: 80px;
+  }
+}

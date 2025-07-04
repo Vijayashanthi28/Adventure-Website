@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Filters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-banner">
+         FEELING SPONTANEOUS?! SAVE ON <a href="#">TRIPS DEPARTING SOON</a>
+    </header>
+    <nav class="navbar">
+   <a href="index.html"> <div class="logo">Adventurage</div></a>
+    <ul class="nav-links">
+      <li><a href="filter1.html" class="active">Tour</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+      <a href="adlogin.html"><span class="profile-icon"><img src="user icon.png"></span></a>
+  </nav>
+
+  <div class="fcontainer">
+  <!-- Sidebar Filters -->
+  <div class="sidebar">
+        <input type="text" placeholder="🔍 Search destinations or activities" class="search-box" />
+        
+        <div class="active-filters">Active Filters:</div>
+        
+        <!-- ACTIVITY FILTER -->
+        <div class="filter-group">
+            <div class="filter-header" onclick="toggleFilter('activity')">
+                <div class="filter-title">
+                    <span class="filter-icon"><img src="activity filter icon.png"></span>
+                    ACTIVITY
+                </div>
+                <span class="arrow" id="activity-arrow">▼</span>
+            </div>
+            <div class="checkboxes" id="activity">
+                <label><input type="checkbox" /> Hiking</label>
+                <label><input type="checkbox" /> Snorkeling</label>
+                <label><input type="checkbox" /> Cycling</label>
+                <label><input type="checkbox" /> Wild Swimming</label>
+                <label><input type="checkbox" /> Rafting</label>
+                <label><input type="checkbox" /> Northern Lights</label>
+            </div>
+        </div>
+
+        <!-- DIFFICULTY FILTER -->
+        <div class="filter-group">
+            <div class="filter-header" onclick="toggleFilter('difficulty')">
+                <div class="filter-title">
+                    <span class="filter-icon"><img src="difficult icon.png"></span>
+                    DIFFICULTY
+                </div>
+                <span class="arrow" id="difficulty-arrow">▼</span>
+            </div>
+            <div class="checkboxes" id="difficulty">
+                <label><input type="checkbox" /> Easy</label>
+                <label><input type="checkbox" /> Moderate</label>
+                <label><input type="checkbox" /> Challenging</label>
+                <label><input type="checkbox" /> Tough</label>
+            </div>
+        </div>
+
+        <!-- DESTINATION FILTER -->
+        <div class="filter-group">
+            <div class="filter-header" onclick="toggleFilter('destination')">
+                <div class="filter-title">
+                    <span class="filter-icon"><img src="destination filter icon.png"></span>
+                    DESTINATION
+                </div>
+                <span class="arrow" id="destination-arrow">▼</span>
+            </div>
+            <div class="checkboxes" id="destination">
+                <label><input type="checkbox" /> Europe</label>
+                <label><input type="checkbox" /> Asia</label>
+                <label><input type="checkbox" /> Africa</label>
+                <label><input type="checkbox" /> South America</label>
+                <label><input type="checkbox" /> North America</label>
+                <label><input type="checkbox" /> Oceania</label>
+            </div>
+        </div>
+    </div>
+
+  <!-- Trip Cards -->
+  <main class="trip-cards">
+    <div class="card">
+      <a href="depart3.html"> <div class="card-tag"><img src="te1.png"></div>
+      <img src="tour 1.png" alt="">
+      <div class="info">
+       <p class="location">France · Italy · Switzerland</p>
+        <h4 style="color:#000;">Trek the Mount Bu Mont</h4>
+        <p class="rating">⭐ 4.8 (32 reviews)</p>
+        <div class="meta">🗓️ Available · Jun–Sep <span class="price">₹ 40,000</span></div></a>
+      </div>
+    </div>
+
+    <div class="card">
+     <a href="depart3.html">  <div class="card-tag"><img src="tt1.png"></div>
+      <img src="tour 2.png" alt="">
+      <div class="info">
+        <p class="location">Morocco · North Africa</p>
+        <h4>Climb Mount Toubkal</h4>
+        <p class="rating">⭐ 4.6 (60 reviews)</p>
+        <div class="meta">🗓️ Available · Dec–Feb <span class="price">₹ 32,520</span></div></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="depart3.html"><div class="card-tag"><img src="tm1.png"></div>
+      <img src="tour 3.png" alt="">
+      <div class="info">
+        <p class="location">Georgia</p>
+        <h4>Cycle the Silk Road</h4>
+        <p class="rating">⭐ 4.9 (15 reviews)</p>
+        <div class="meta">🗓️ Available · Jan–Mar <span class="price">₹ 28,000</span></div></a> 
+      </div>
+    </div>
+
+    <div class="card">
+     <a href="depart3.html"> <div class="card-tag"><img src="te1.png"></div>
+      <img src="tour 4.png" alt="">
+      <div class="info">
+        <p class="location">Norway · Europe</p>
+        <h4>Arctic Circle Fat Expenditure</h4>
+        <p class="rating">⭐ 4.2 (18 reviews)</p>
+        <div class="meta">🗓️ Available · Jun–Sep <span class="price">₹ 25,780</span></div></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="depart3.html">  <div class="card-tag"><img src="tc1.png"></div>
+      <img src="tour 5.png" alt="">
+      <div class="info">
+        <p class="location">New Zealand · Oceania</p>
+        <h4>Coast to Coast Expedition</h4>
+        <p class="rating">⭐ 4.5 (10 reviews)</p>
+        <div class="meta">🗓️ Available · Apr–Jun <span class="price">₹ 72,000</span></div></a>
+      </div>
+    </div>
+
+    <div class="card">
+       <a href="depart3.html">  <div class="card-tag"><img src="tt1.png"></div>
+      <img src="tour 6.png" alt="">
+      <div class="info">
+        <p class="location">Pennsylvania · US State</p>
+        <h4>Chase the Aurora in Lofoten</h4>
+        <p class="rating">⭐ 4.6 (36 reviews)</p>
+        <div class="meta">🗓️ Available · Jan–Mar <span class="price">₹ 48,120</span></div></a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Tabs -->
+  <div class="tabs">
+  <button class="tab-button active" data-tab="destination">Destination</button>
+  <button class="tab-button" data-tab="activities">Activities</button>
+  <button class="tab-button" data-tab="collections">Collections</button>
+</div>
+
+<div class="gallery">
+  <!-- DESTINATION IMAGES -->
+  <div class="tab-content destination">
+    <a href="filter3.html"><div class="tab-card"><img src="eu1.png"><span>Europe</span></div></a>
+    <a href="filter1.html"><div class="tab-card"><img src="as1.png"><span>Asia</span></div></a>
+    <a href="filter2.html"><div class="tab-card"><img src="af1.png"><span>Africa</span></div></a>
+   <a href="filter3.html"> <div class="tab-card"><img src="sa1.png"><span>South America</span></div></a>
+     <a href="filter3.html"><div class="tab-card"><img src="na1.png"><span>North America</span></div></a>
+     <a href="filter2.html"> <div class="tab-card"><img src="oc2.png"><span>Oceania</span></div></a>
+  </div>
+
+  <!-- ACTIVITIES IMAGES -->
+  <div class="tab-content activities hidden">
+   <a href="depart3.html" ><div class="tab-card"><img src="hiking.png"><span>Hiking</span></div></a>
+     <a href="depart1.html" ><div class="tab-card"><img src="cycling.png"><span>Cycling</span></div></a>
+    <a href="depart3.html" ><div class="tab-card"><img src="rafting.png"><span>Rafting</span></div></a>
+     <a href="depart1.html" ><div class="tab-card"><img src="snor.png"><span>Snorkeling</span></div></a>
+    <a href="depart3.html"><div class="tab-card"><img src="swim.png"><span>Wild Swimming</span></div></a>
+    <a href="depart1.html" ><div class="tab-card"><img src="northern.png"><span>Diving</span></div></a> 
+  </div>
+
+  <!-- COLLECTIONS IMAGES -->
+  <div class="tab-content collections hidden">
+     <a href="depart3.html" ><div class="tab-card"><img src="new.png"><span>New Adventure</span></div></a> 
+      <a href="depart3.html" ><div class="tab-card"><img src="winter.png"><span>Winter Sun</span></div></a>
+     <a href="depart2.html" ><div class="tab-card"><img src="desert.png"><span>JDesert &Dunes</span></div></a> 
+    <a href="depart3.html" > <div class="tab-card"><img src="foodie.png"><span>Foodie Adventures</span></div></a>
+   <a href="depart2.html" > <div class="tab-card"><img src="jungle.png"><span>Jungle Adventures</span></div></a>
+    <a href="depart2.html" > <div class="tab-card"><img src="islands.png"><span>Islands Adventure</span></div></a>
+  </div>
+</div>
+
+
+
+<section class="features-icons">
+  <div class="icon-item">
+    <img src="bottom icon 1.png"/>
+    <p>Explore place you<br>couldn’t yourself</p>
+  </div>
+  <div class="icon-item">
+    <img src="bottom icon 2.png"/>
+    <p>Go with the outdoor<br>specialists</p>
+  </div>
+  <div class="icon-item">
+    <img src="bottom icon 3.png"/>
+    <p>Join a small like-<br>minded group</p>
+  </div>
+  <div class="icon-item">
+    <img src="bottom icon.png"/>
+    <p>Hassle-free from<br>start to finish</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+     <a href="index.html"> <h3>Adventurage<br><span style=" font-family: 'DM Sans', sans-serif; font-size:1.5rem;color:#fff;">=BOOK WITH CONFIDENCE=</span></h3></a>
+     
+    </div>
+    <div class="footer-links">
+      <h4>ABOUT</h4>
+      <ul>
+       <a href="about2.html" ><li>Our Story</li></a>
+        <a href="about1.html" > <li>Our Impact</li></a>
+        <a href="team.html" ><li>Meet the Team</li></a>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>CUSTOMERS</h4>
+      <ul>
+       <a href="contact.html"> <li>Contact Us</li></a>
+       <a href="about.html" > <li>Terms & Conditions</li></a>
+         <a href="about.html"> <li>Privacy Policy</li></a>
+         <a href="about.html" > <li>Agency Booking</li></a>
+      </ul>
+    </div>
+  
+  </div>
+    <p class="footer-copy">&copy; Copyright Adventurage Ltd. Registration Number 012458697</p>
+</footer>
+      <script src="script.js"></script>
+</body>
+</html>

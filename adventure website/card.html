@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Card Details</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-banner">
+         FEELING SPONTANEOUS?! SAVE ON <a href="#">TRIPS DEPARTING SOON</a>
+    </header>
+    <nav class="navbar">
+   <a href="index.html"> <div class="logo">Adventurage</div></a>
+    <ul class="nav-links">
+      <li><a href="filter1.html" class="active">Tour</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+      <a href="adlogin.html"><span class="profile-icon"><img src="user icon.png"></span></a>
+  </nav>
+
+  <div class="paycard-container">
+    <a href="index.html"><h1 class="con-logo">Adventurage</h1></a>
+ 
+     <h2>PAYMENT DUE</h1>
+    <div class="price1">40,000</div>
+    <p>Payment for your adventure</p>
+    
+    <h3>We accept VISA and MASTER CARD</h2>
+    
+     <div class="paycard-section">
+        <div class="pc-image">
+            
+            <img src="card round.png" alt="Card"> 
+            <img src="card icon.png" alt="Card Icon">
+            <span style="font-size:1.8rem; font-weight: 600;">Card</span>
+        </div>
+            
+        <h3>Card Number</h3>
+        <div class="card-number" id="card-number" ondblclick="fillCardNumber()">**** **** **** ****</div>
+        
+        <div class="paycard-details">
+            <div>
+                <h3>Expire Date MM/YY</h3>
+                <div class="expiry" id="expiry" ondblclick="fillExpiry()"></div>
+            </div>
+            <div>
+                <h3>CVV 3 digits</h3>
+                <div class="cvv" id="cvv" ondblclick="fillCVV()"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="address-section">
+        <h2>ADDRESS</h2>
+        
+        <div class="address-field">
+            <h3>House number</h3>
+            <textarea id="house-number" rows="2" ondblclick="fillHouseNumber()"></textarea>
+        </div>
+        
+        <div class="address-grid">
+            <div>
+                <h3>Street</h3>
+                <input type="text" id="street" ondblclick="fillStreet()">
+            </div>
+            <div>
+                <h3>City</h3>
+                <input type="text" id="city" ondblclick="fillCity()">
+            </div>
+            <div>
+                <h3>Postal Code</h3>
+                <input type="text" id="postal-code" ondblclick="fillPostalCode()">
+            </div>
+            <div>
+                <h3>Country</h3>
+                <input type="text" id="country" ondblclick="fillCountry()">
+            </div>
+        </div>
+    </div>
+
+<a href="booksuccess.html"> <button class="cpay-now">PAY NOW</button></a>
+     </div>
+
+
+     <section class="features-icons">
+  <div class="icon-item">
+    <img src="bottom icon 1.png"/>
+    <p>Explore place you<br>couldn’t yourself</p>
+  </div>
+  <div class="icon-item">
+    <img src="bottom icon 2.png"/>
+    <p>Go with the outdoor<br>specialists</p>
+  </div>
+  <div class="icon-item">
+    <img src="bottom icon 3.png"/>
+    <p>Join a small like-<br>minded group</p>
+  </div>
+  <div class="icon-item">
+    <img src="bottom icon.png"/>
+    <p>Hassle-free from<br>start to finish</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+     <a href="index.html"> <h3>Adventurage<br><span style=" font-family: 'DM Sans', sans-serif; font-size:1.5rem;color:#fff;">=BOOK WITH CONFIDENCE=</span></h3></a>
+     
+    </div>
+    <div class="footer-links">
+      <h4>ABOUT</h4>
+      <ul>
+       <a href="about2.html" ><li>Our Story</li></a>
+        <a href="about1.html" > <li>Our Impact</li></a>
+        <a href="team.html" ><li>Meet the Team</li></a>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>CUSTOMERS</h4>
+      <ul>
+       <a href="contact.html"> <li>Contact Us</li></a>
+       <a href="about.html" > <li>Terms & Conditions</li></a>
+         <a href="about.html"> <li>Privacy Policy</li></a>
+         <a href="about.html" > <li>Agency Booking</li></a>
+      </ul>
+    </div>
+  
+  </div>
+    <p class="footer-copy">&copy; Copyright Adventurage Ltd. Registration Number 012458697</p>
+</footer>
+
+    <script>
+        //Payment Card details
+         // Predefined data
+        const cardData = {
+            cardNumber: '1234 1235 1236 1237',
+            expiry: '07/28',
+            cvv: '123',
+            houseNumber: 'Plot no 4,Shalom cottage',
+            street: 'Paul Street',
+            city: 'Salem',
+            postalCode: '636 302',
+            country: 'INDIA'
+        };
+        
+        // Functions to fill data on double click
+        function fillCardNumber() {
+            document.getElementById('card-number').textContent = cardData.cardNumber;
+        }
+        
+        function fillExpiry() {
+            document.getElementById('expiry').textContent = cardData.expiry;
+        }
+        
+        function fillCVV() {
+            document.getElementById('cvv').textContent = cardData.cvv;
+        }
+        
+        function fillHouseNumber() {
+            document.getElementById('house-number').value = cardData.houseNumber;
+        }
+        
+        function fillStreet() {
+            document.getElementById('street').value = cardData.street;
+        }
+        
+        function fillCity() {
+            document.getElementById('city').value = cardData.city;
+        }
+        
+        function fillPostalCode() {
+            document.getElementById('postal-code').value = cardData.postalCode;
+        }
+        
+        function fillCountry() {
+            document.getElementById('country').value = cardData.country;
+        }
+    </script>
+</body>
+</html>
